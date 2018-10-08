@@ -1,4 +1,4 @@
-FROM node:8.12
+FROM node:10
 RUN usermod -u 1002 node && groupmod -g 1002 node
 RUN apt-get update && apt-get -y upgrade
 
