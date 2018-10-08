@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const HeaderStyle = styled.div`
   position: absolute;
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
   transition: border 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955),
     background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);

@@ -96,6 +96,7 @@ export default class ReactConf extends Document {
                 <link rel="apple-touch-icon" sizes="152x152" href="/static/image/icon/apple-touch-icon-152x152.png" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/static/image/icon/apple-touch-icon-180x180.png" />
                 {styleTags}
+                {this.helmetJsx}
             </Head>
             <body {...this.helmetBodyAttrComponents}>
             {main}

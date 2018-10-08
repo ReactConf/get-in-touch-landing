@@ -27,6 +27,7 @@ function pickRandomProperty(obj) {
 
 const FormBox = styled.div`
   width: 100%;
+  
   .form-describe {
     font-size: 1.35rem;
     ${media.phone`
@@ -36,6 +37,7 @@ const FormBox = styled.div`
   ${media.tablet`
       padding: .75em 5% 1em 5%;
       margin-bottom: 2em;
+      text-align: center;
     `};
 `;
 
@@ -44,6 +46,10 @@ const ModalButton = styled.div`
     font-size: 1rem;
   }
   .ant-btn-primary {
+     padding: 0 1.5em;
+     ${media.tablet`
+        padding: 0 2.5em;
+    `};
      border-radius: 1.6em;
     height: 48px;
     line-height: 48px;
