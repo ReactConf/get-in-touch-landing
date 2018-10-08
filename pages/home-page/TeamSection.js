@@ -5,7 +5,7 @@ import TeamMembers from "components/TeamMembers/index";
 const items = [
   {
     image: "/static/image/people/milad.jpg",
-    name: "Milad Hrydari",
+    name: "Milad Heydari",
     socials: [
       {
         url: "https://linkedin.com/in/miladheydari",
@@ -44,7 +44,21 @@ const items = [
         icon: "fa-twitter"
       }
     ]
-  }
+  },
+    {
+        image: "/static/image/people/arash.jpg",
+        name: "Arash Shams",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/ara4sh",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/Ara4Sh",
+                icon: "fa-twitter"
+            }
+        ]
+    }
 ];
 const TeamSection = () => {
   return (
