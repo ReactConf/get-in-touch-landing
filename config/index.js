@@ -3,6 +3,7 @@ export default {
     email: "info@reactconf.ir",
     mailchimp: "http://reactconf.us19.list-manage.com/subscribe/post-json?u=c871415349db8b06a64621efd&id=a64b55ddf9&c=callback",
     analyticsKey: "UA-117830788-1",
+    googleWebmaster: "xyvPYPKo2DCCYlIRzLEqKNFVVLximNJ-QVej3jo0NcE",
     social : {
         twitter: 'https://twitter.com/reactconf_ir',
         instagram: 'https://www.instagram.com/reactconf/',

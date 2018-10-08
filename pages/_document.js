@@ -52,7 +52,7 @@ export default class ReactConf extends Document {
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer',${config.analyticsKey});`}} />
+      })(window,document,'script','dataLayer',"${config.analyticsKey}");`}} />
                 <noscript
                     dangerouslySetInnerHTML={{__html: `
                         <iframe
@@ -68,6 +68,7 @@ export default class ReactConf extends Document {
                 <link rel="shortcut icon" href="/static/image/icon/favicon.ico" type="image/x-icon" />
                 <meta charset="utf-8"/>
                 <title>ReactConf 2019 | Javascript & ReactJS Conference</title>
+                <meta name="google-site-verification" content={`"${config.googleWebmaster}"`} />
                 <meta name="robots" content="index, follow"/>
                 <meta name="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…"/>
                 <meta name="image" content="/static/image/icon/apple-touch-icon.png"/>
