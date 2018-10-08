@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  react-conferance:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reactconf
+    entrypoint: sh entrypoint.sh
+    working_dir: /home/node
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node

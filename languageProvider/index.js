@@ -1,9 +1,9 @@
-import FaLang from "./entries/fa-IR";
-import {addLocaleData} from "react-intl";
+import Enlang from "./entries/en_US";
+import { addLocaleData } from "react-intl";
 
 const AppLocale = {
-    fa: FaLang
+  en: Enlang
 };
-addLocaleData(AppLocale.fa.data);
+addLocaleData(AppLocale.en.data);
 
 export default AppLocale;
