@@ -1,7 +1,7 @@
 export default {
     localStorageName: "reactConf",
     email: "info@reactconf.ir",
-    mailchimp: "http://reactconf.us19.list-manage.com/subscribe/post-json?u=c871415349db8b06a64621efd&id=a64b55ddf9&c=callback",
+    mailchimp: "reactconf.us19.list-manage.com/subscribe/post-json?u=c871415349db8b06a64621efd&id=a64b55ddf9&c=callback",
     analyticsKey: "GTM-MKF6XHF",
     googleWebmaster: "xyvPYPKo2DCCYlIRzLEqKNFVVLximNJ-QVej3jo0NcE",
     social : {

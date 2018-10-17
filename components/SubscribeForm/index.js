@@ -354,7 +354,7 @@ class SubscribeForm extends Component {
                 this.setState({
                     loading: true,
                 });
-                const url = new URL(config.mailchimp),
+                const url = new URL(`${window.location.protocol}//${config.mailchimp}`),
                     params = values;
                 Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
                 let script = document.createElement('script');
