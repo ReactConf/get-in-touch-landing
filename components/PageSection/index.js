@@ -18,6 +18,7 @@ const PageHeading = styled.h2`
   text-align: center;
   margin: 0 0 2rem 0;
 `;
+
 class PageSection extends Component {
   render() {
     const { title, size, bg, children, id } = this.props;
