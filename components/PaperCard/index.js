@@ -58,9 +58,18 @@ const PaperCard = ({ title, body, btn, btnlink }) => {
         <a
           target="_blank"
           href={btnlink}
-          className="ant-btn ant-btn-lg ant-btn-dashed"
+          className="ant-btn ant-btn-lg ant-btn-primary"
         >
             <IntlMessages id={btn} />
+        </a>
+        <br/><br/>
+        <a
+          target="_blank"
+          href="#"
+          className="ant-btn  ant-btn-lg "
+        >
+          <i className="fas fa-download"></i>
+          <span> <IntlMessages id="btnDlTemplate" /></span>
         </a>
       </CardFace>
     </Fragment>

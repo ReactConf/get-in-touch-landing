@@ -7,10 +7,11 @@
   "topmenu.contact": "Contact",
   "team.heading": "Team",
   "speaker.heading": "Become a Speaker",
+  "jury.heading": "jury",
   "speaker.title": "Join Speakers",
   "speaker.header": "In this year's React conference, we will be happy to receive your article in the areas of all parts of JavaScript. The articles will be judged after submission, and if confirmed, we will be proud to host you at this year's React conference as a speaker.We are glad to receive your presentations, which include your work experience and creativity.",
   "speaker.body": "Data Structures and Algorithms in JavaScript, Reactive Programming, ReactNative, Performance, State Managements, Testing Javascript Applications, Cross Platform Applications, Web Assembly, Styling in depth or anything in your passion. ",
-  "speaker.btn": "send your proposal",
+  "speaker.btn": "Send Your Proposal",
   "sponsors.heading": "Sponsors",
   "contact.heading": "stay informed",
   "contact.follow": "Follow ReactConf",
@@ -32,5 +33,6 @@
   "form.modal.email.validation.format": "The input is not valid E-mail!",
   "form.modal.phone": "Phone Number",
   "form.modal.phone.validation": "Please input your phone number!",
-  "form.describe": "Get the latest event news on your devices"
+  "form.describe": "Get the latest event news on your devices",
+  "btnDlTemplate" : "Sample Template"
 }

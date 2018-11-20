@@ -6,12 +6,20 @@ import PaperCard from "components/PaperCard/index";
 import config from 'config';
 import styled from "styled-components";
 import IntlMessages from "components/utility/intlMessages";
+import JurySection from "./JurySection";
 
 const PageDescription = styled.p`
 font-size: 1rem;
 text-align: center;
 max-width: 750px;
 margin: 0 auto;
+`;
+const PageHeading2 = styled.h2`
+  font-family: "LatoWebMedium";
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
 `;
 
 const BecomeSpeakerSection = () => {
@@ -33,6 +41,12 @@ const BecomeSpeakerSection = () => {
                     />
                 </Col>
             </Row>
+            <Row type="flex" justify="center">
+                <Col span={24}>
+                  <PageHeading2><IntlMessages id="jury.heading" /></PageHeading2>
+                </Col>
+            </Row>
+            <JurySection />
         </PageSection>
     );
 };

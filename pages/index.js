@@ -7,6 +7,7 @@ import BecomeSpeakerSection from "./home-page/BecomeSpeakerSection";
 import TeamSection from "./home-page/TeamSection";
 import HeaderItems from "components/HeaderItems";
 import HomeBackground from "./home-page/HomeBackground";
+import JurySection from "./home-page/JurySection";
 
 const HomePage = () => {
     return (
