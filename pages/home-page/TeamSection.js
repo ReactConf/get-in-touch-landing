@@ -58,6 +58,34 @@ const items = [
                 icon: "fa-twitter"
             }
         ]
+    },
+    {
+        image: "/static/image/people/idin.jpg",
+        name: "Idin Khayami",
+        socials: [
+            {
+                url: "https://ir.linkedin.com/in/idin-khayami-93163aa3",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/iiciigiirl",
+                icon: "fa-twitter"
+            }
+        ]
+    },
+    {
+        image: "/static/image/people/samir.jpg",
+        name: "Samir Rad",
+        socials: [
+            {
+                url: "http://www.linkedin.com/in/radismedia",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "http://www.instagram.com/radismedia",
+                icon: "fa-instagram"
+            }
+        ]
     }
 ];
 const TeamSection = () => {
