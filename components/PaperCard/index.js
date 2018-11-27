@@ -65,10 +65,10 @@ const PaperCard = ({ title, body, btn, btnlink }) => {
         <br/><br/>
         <a
           target="_blank"
-          href="#"
+          href="https://docs.google.com/document/d/1Obnipcy4l8_uPEfLB6jS-v0ND3JycxAnoSfOE1GocQQ"
           className="ant-btn  ant-btn-lg "
         >
-          <i className="fas fa-download"></i>
+          <i className="fas fa-download"/>
           <span> <IntlMessages id="btnDlTemplate" /></span>
         </a>
       </CardFace>
