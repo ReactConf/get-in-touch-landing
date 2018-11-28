@@ -96,7 +96,7 @@ const TeamSection = () => {
       bg="#e3e2dd"
       id="team"
     >
-      <TeamMembers items={items} />
+      <TeamMembers items={items} type={'team'} />
     </PageSection>
   );
 };

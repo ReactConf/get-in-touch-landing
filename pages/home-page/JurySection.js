@@ -48,7 +48,7 @@ const items = [
 ];
 const JurySection = () => {
   return (
-      <TeamMembers items={items} />
+      <TeamMembers items={items}  type={'jury'} />
   );
 };
 
