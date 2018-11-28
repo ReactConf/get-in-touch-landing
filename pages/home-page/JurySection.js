@@ -31,6 +31,20 @@ const items = [
     ]
   },
     {
+        image: "/static/image/people/reza.jpg",
+        name: "Reza Shadman",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/bigsinoos",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/reshadman",
+                icon: "fa-twitter"
+            }
+        ]
+    },
+    {
         image: "/static/image/people/armin.jpg",
         name: "Armin Ebrahimi",
         socials: [
@@ -40,6 +54,20 @@ const items = [
             },
             {
                 url: "https://twitter.com/Arm1nE",
+                icon: "fa-twitter"
+            }
+        ]
+    },
+    {
+        image: "/static/image/people/mohammad.jpg",
+        name: "Mohamad Mohebifar",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/mohebifar",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/mohebifar",
                 icon: "fa-twitter"
             }
         ]

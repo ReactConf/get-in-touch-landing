@@ -13,6 +13,8 @@ import Texty from "rc-texty";
 import "rc-texty/assets/index.css";
 import animType from "rc-texty/lib/animTypes";
 import config from 'config';
+import axios from 'axios';
+import _ from 'lodash';
 
 const FormItem = Form.Item;
 function filter(inputValue, path) {
@@ -344,48 +346,43 @@ class SubscribeForm extends Component {
         console.log(inputValue, path);
         return (path.some(option => (option.label).toLowerCase().indexOf(inputValue.toLowerCase()) > -1));
     }
-    parseJSON = (response) => {
-        return response.json();
-    }
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.form.validateFields((err, values) => {
-            if (!err) {
-                this.setState({
-                    loading: true,
-                });
-                const url = new URL(`${window.location.protocol}//${config.mailchimp}`),
-                    params = values;
-                Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
-                let script = document.createElement('script');
-                script.src = url;
-                document.body.appendChild(script);
-                let callback = 'callback';
-                window[callback] =  (data) => {
-                    delete window[callback];
-                    document.body.removeChild(script);
-                    this.setState({
+        this.props.form.validateFields( async (err, values)  => {
+            try {
+                if (!err) {
+                    await this.setState({loading: true});
+                    Object.assign(values, {experience : values.experience.toString()});
+                    const response = await axios.post(config.apiUrl,values);
+                    await this.setState({
                         loading: false,
+                        modalVisible: false,
                     });
-                    if(data.result === 'error') {
+                    await this.props.form.resetFields();
+                    await notification['success']({
+                        message: 'Success',
+                        description: response.data.message
+                    });
+                }
+            }
+            catch (e) {
+                await this.setState({loading: false});
+                if(e.response.status === 400) {
+                    await _.forEach(e.response.data.errors, (value,key) => {
                         notification['error']({
-                            message: 'Error',
-                            description: data.msg
+                            message: `${key} error`,
+                            description: value
                         });
-                    } else {
-                        this.setState({
-                            modalVisible: false,
-                        });
-                        this.props.form.resetFields();
-                        notification['success']({
-                            message: 'Success',
-                            description: data.msg
-                        });
-                    }
+                    });
+                } else {
+                    notification['error']({
+                        message: `error`,
+                        description: "Please try again!"
+                    });
                 }
             }
         });
-    }
+    };
     render() {
         const { describe} = this.props;
         const { getFieldDecorator } = this.props.form;
@@ -435,7 +432,7 @@ class SubscribeForm extends Component {
                             {...formItemLayout}
                             label= {this.context.intl.formatMessage({id: "form.modal.fname"})}
                         >
-                            {getFieldDecorator('FNAME', {
+                            {getFieldDecorator('first_name', {
                                 rules: [{
                                     required: true, message: this.context.intl.formatMessage({id: "form.modal.fname.validation"})
                                 }],
@@ -447,7 +444,7 @@ class SubscribeForm extends Component {
                             {...formItemLayout}
                             label={this.context.intl.formatMessage({id: "form.modal.lname"})}
                         >
-                            {getFieldDecorator('LNAME', {
+                            {getFieldDecorator('last_name', {
                                 rules: [{
                                     required: true, message: this.context.intl.formatMessage({id: "form.modal.lname.validation"}),
                                 }],
@@ -459,7 +456,7 @@ class SubscribeForm extends Component {
                             {...formItemLayout}
                             label={this.context.intl.formatMessage({id: "form.modal.experience"})}
                         >
-                            {getFieldDecorator('JOB', {
+                            {getFieldDecorator('experience', {
                                 rules: [{
                                     required: true,
                                     message: this.context.intl.formatMessage({id: "form.modal.experience.validation"}),
@@ -477,7 +474,7 @@ class SubscribeForm extends Component {
                             {...formItemLayout}
                             label={this.context.intl.formatMessage({id: "form.modal.email"})}
                         >
-                            {getFieldDecorator('EMAIL', {
+                            {getFieldDecorator('email', {
                                 rules: [{
                                     type: 'email',
                                     message: this.context.intl.formatMessage({id: "form.modal.email.validation.format"}),
@@ -493,7 +490,7 @@ class SubscribeForm extends Component {
                             {...formItemLayout}
                             label={this.context.intl.formatMessage({id: "form.modal.phone"})}
                         >
-                            {getFieldDecorator('PHONE', {
+                            {getFieldDecorator('phone_number', {
                                 rules: [{ required: false,
                                     message: this.context.intl.formatMessage({id: "form.modal.phone.validation"})
                                 }],

@@ -1,5 +1,6 @@
 export default {
     localStorageName: "reactConf",
+    apiUrl: "https://reactconf.herokuapp.com/api/subscribes",
     email: "info@reactconf.ir",
     mailchimp: "reactconf.us19.list-manage.com/subscribe/post-json?u=c871415349db8b06a64621efd&id=a64b55ddf9&c=callback",
     analyticsKey: "GTM-MKF6XHF",
