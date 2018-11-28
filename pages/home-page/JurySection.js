@@ -1,18 +1,17 @@
 import React from "react";
-import PageSection from "components/PageSection/index";
 import TeamMembers from "components/TeamMembers/index";
 
 const items = [
   {
-    image: "/static/image/people/ilia.jpg",
-    name: "Ilia Vakili",
+    image: "/static/image/people/mahdieh.jpg",
+    name: "Mahdieh Noroozian",
     socials: [
       {
-        url: "https://www.linkedin.com/in/ilia-vakili-01b8a844/",
+        url: "https://www.linkedin.com/in/mahdieh-noroozian-90016b45/",
         icon: "fa-linkedin"
       },
       {
-        url: "https://twitter.com/thereticent",
+        url: "https://twitter.com/_mahdieh_",
         icon: "fa-twitter"
       }
     ]
