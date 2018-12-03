@@ -31,6 +31,20 @@ const items = [
     ]
   },
     {
+        image: "/static/image/people/farzad.jpg",
+        name: "Farzad YousefZadeh",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/farzadyz/",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/Farzad_YZ",
+                icon: "fa-twitter"
+            }
+        ]
+    },
+    {
         image: "/static/image/people/reza.jpg",
         name: "Reza Shadman",
         socials: [
