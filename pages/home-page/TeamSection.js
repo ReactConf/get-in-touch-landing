@@ -86,6 +86,20 @@ const items = [
                 icon: "fa-instagram"
             }
         ]
+    },
+    {
+        image: "/static/image/people/iman.jpg",
+        name: "Iman Aletaha",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/idrstreet",
+                icon: "fa-twitter"
+            }
+        ]
     }
 ];
 const TeamSection = () => {
