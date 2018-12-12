@@ -46,6 +46,20 @@ const items = [
     ]
   },
     {
+        image: "/static/image/people/armin.jpg",
+        name: "Armin Ebrahimi",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/arm1ne/",
+                icon: "fa-linkedin"
+            },
+            {
+                url: "https://twitter.com/Arm1nE",
+                icon: "fa-twitter"
+            }
+        ]
+    },
+    {
         image: "/static/image/people/arash.jpg",
         name: "Arash Shams",
         socials: [
