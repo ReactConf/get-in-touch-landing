@@ -17,7 +17,7 @@ const Avatar = styled.div`
   img {
     border-radius: 50%;
     width: 100%;
-    filter: grayscale(100%);
+    //filter: grayscale(100%);
   }
 `;
 const AvatarEffect = styled.div`
@@ -26,7 +26,7 @@ const AvatarEffect = styled.div`
   height: 100%;
   left: 0;
   top: 0;
-  background: rgb(3, 241, 244, 0.25);
+  /*background: rgb(3, 241, 244, 0.25);
   background: -moz-linear-gradient(
     -45deg,
     rgba(3, 241, 244, 0.25) 0%,
@@ -42,7 +42,7 @@ const AvatarEffect = styled.div`
     rgba(3, 241, 244, 0.25) 0%,
     rgba(95, 3, 244, 0.25) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03f1f4', endColorstr='#5f03f4',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03f1f4', endColorstr='#5f03f4',GradientType=1 );*/
 `;
 
 const AvatarEffectJury = styled.div`
@@ -51,7 +51,7 @@ const AvatarEffectJury = styled.div`
   height: 100%;
   left: 0;
   top: 0;
-  background: rgb(198, 40, 40, 0.25);
+  /*background: rgb(198, 40, 40, 0.25);
   background: -moz-linear-gradient(
     -45deg,
     rgba(198, 40, 40, 0.25) 0%,
@@ -67,7 +67,7 @@ const AvatarEffectJury = styled.div`
     rgba(198, 40, 40, 0.25) 0%,
     rgba(255, 213, 79, 0.25) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFD54F', endColorstr='#c62828',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFD54F', endColorstr='#c62828',GradientType=1 );*/
 `;
 
 function renderFarm(items,type) {
