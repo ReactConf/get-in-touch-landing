@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import Drawer from "antd/lib/drawer";
 import Menu from "antd/lib/menu";
 import Anchor from "antd/lib/anchor";
 import Link from "next/link";
 import IntlMessages from "helpers/intlMessages";
 import styled from "styled-components";
 import media from "components/layouts/Master/MediaQuery";
+import dynamic from 'next/dynamic'
 
+const SlideMenu = dynamic(import('./SlideMenu'))
 
 const Btn = styled.div`
 a {
@@ -59,60 +60,36 @@ const MainMenuStyle = styled.div`
 `;
 
 class MainMenu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      visible: false
-    };
-  }
-  showDrawer = () => {
-    this.setState({
-      visible: !this.state.visible
-    });
+  state = {
+    visible: false
   };
+
+  showDrawer = () => {
+    this.setState((prevState) => ({
+      visible: !prevState.visible
+    }));
+  };
+
   onClose = () => {
     this.setState({
       visible: false
     });
   };
-  renderMenu = items => {
-    return items.map((item, index) => {
-      return (
-        <Menu.Item key={index}>
-          {item.type === "external" ? (
-            <a href={item.url} target="_blank">
-              {item.text}
-            </a>
-          ) : (
-              <Anchor affix={false}><Anchor.Link href={`${item.url}`} title={item.text}/></Anchor>
-          )}
-        </Menu.Item>
-      );
-    });
-  };
 
   render() {
+	  const { items } = this.props;
+	  const { visible } = this.state;
     return (
       <MainMenuStyle>
         <Menu mode="horizontal" className="main-menu">
           <Link href="/">
             <Btn>
-                <Anchor affix={false}><Anchor.Link href="#speaker" title={<IntlMessages id="topmenu.speaker" />}/></Anchor>
+                <Anchor affix={false}><Anchor.Link href="#speaker" title={<IntlMessages id="topmenu.speaker" />} /></Anchor>
             </Btn>
           </Link>
         </Menu>
         <i className="fas fa-bars menu-fold" onClick={this.showDrawer} />
-        <Drawer
-          title="Menu"
-          placement="right"
-          onClose={this.onClose}
-          visible={this.state.visible}
-          zIndex={99999}
-        >
-          <Menu mode="vertical" className="main-menu">
-            {this.renderMenu(this.props.items)}
-          </Menu>
-        </Drawer>
+				{ visible && <SlideMenu items={items} onClose={this.onClose} /> }
       </MainMenuStyle>
     );
   }
