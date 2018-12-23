@@ -56,19 +56,21 @@ const PaperCard = ({ title, body, btn, btnlink }) => {
         <CardTitle><IntlMessages id={title} /></CardTitle>
         <CardParagraph><IntlMessages id={body} /></CardParagraph>
         <a
-          target="_blank"
+					target="_blank"
+					rel="noopener noreferrer"
           href={btnlink}
           className="ant-btn ant-btn-lg ant-btn-primary"
         >
             <IntlMessages id={btn} />
         </a>
-        <br/><br/>
+        <br /><br />
         <a
-          target="_blank"
+					target="_blank"
+					rel="noopener noreferrer"
           href="https://docs.google.com/document/d/1Obnipcy4l8_uPEfLB6jS-v0ND3JycxAnoSfOE1GocQQ"
           className="ant-btn  ant-btn-lg "
         >
-          <i className="fas fa-download"/>
+          <i className="fas fa-download" />
           <span> <IntlMessages id="btnDlTemplate" /></span>
         </a>
       </CardFace>
@@ -76,9 +78,9 @@ const PaperCard = ({ title, body, btn, btnlink }) => {
   );
 };
 PaperCard.propTypes = {
-    title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
-    btnlink: PropTypes.string.isRequired,
     btn: PropTypes.string.isRequired,
+    btnlink: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
 };
 export default PaperCard;

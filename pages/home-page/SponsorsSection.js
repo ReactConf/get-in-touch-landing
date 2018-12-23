@@ -28,7 +28,8 @@ const SponsorsSection = () => {
       id={id}
     >
       <a
-        target="_blank"
+				target="_blank"
+				rel="noopener noreferrer"
         href={`mailto:${config.email}`}
         className="ant-btn ant-btn-lg ant-btn-dashed"
       >

@@ -52,7 +52,7 @@ class HomeSection extends Component {
             >
               <HomeContentBox>
                 <Link href="/">
-                  <a>
+                  <a rel="noopener noreferrer">
                     <img src="/static/image/logo.svg" />
                   </a>
                 </Link>
