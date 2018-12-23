@@ -2,12 +2,12 @@ import React, { Fragment } from "react";
 import MasterLayout from "components/layouts/Master";
 import { Helmet } from "react-helmet";
 import HomeSection from "./home-page/HomeSection";
-import SponsorsSection from "./home-page/SponsorsSection";
 import BecomeSpeakerSection from "./home-page/BecomeSpeakerSection";
 import TeamSection from "./home-page/TeamSection";
 import HeaderItems from "components/HeaderItems";
 import HomeBackground from "./home-page/HomeBackground";
-import JurySection from "./home-page/JurySection";
+// import SponsorsSection from "./home-page/SponsorsSection";
+// import JurySection from "./home-page/JurySection";
 
 const HomePage = () => {
     return (
@@ -18,7 +18,7 @@ const HomePage = () => {
                 <meta name="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…" />
             </Helmet>
             <MasterLayout>
-                <HeaderItems/>
+                <HeaderItems />
                 <HomeSection />
                 <HomeBackground />
                 {/*<SponsorsSection />*/}

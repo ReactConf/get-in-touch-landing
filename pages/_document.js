@@ -52,7 +52,8 @@ export default class ReactConf extends Document {
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer',"${config.analyticsKey}");`}} />
+      })(window,document,'script','dataLayer',"${config.analyticsKey}");`}}
+                />
                 <noscript
                     dangerouslySetInnerHTML={{__html: `
                         <iframe
@@ -62,32 +63,33 @@ export default class ReactConf extends Document {
                             style={{display:'none",visibility:"hidden"}}
                         >
                         </iframe>
-                    `}} />
+                    `}}
+                />
                 <style>{`body { margin: 0 }`}</style>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
                 <link rel="stylesheet" href="/static/css/font-awesome.css" />
                 <link rel="shortcut icon" href="/static/image/icon/favicon.ico" type="image/x-icon" />
-                <meta charset="utf-8"/>
+                <meta charset="utf-8" />
                 <title>ReactConf 2019 | Javascript & ReactJS Conference</title>
                 <meta name="google-site-verification" content={`${config.googleWebmaster}`} />
-                <meta name="robots" content="index, follow"/>
-                <meta name="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…"/>
-                <meta name="image" content="/static/image/reactconf.jpg"/>
-                <meta itemprop="name" content="React Conf | Javascript & ReactJS Conference"/>
-                <meta itemprop="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…"/>
-                <meta itemprop="image" content="/static/image/reactconf.jpg"/>
-                <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:title" content="React Conf | Javascript & ReactJS Conference"/>
-                <meta name="twitter:description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…"/>
-                <meta name="twitter:site" content="@reactconf_ir"/>
-                <meta name="twitter:image:src" content="/static/image/icon/apple-touch-icon.png"/>
-                <meta name="og:title" content="React Conf | Javascript & ReactJS Conference"/>
-                <meta name="og:description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…"/>
-                <meta name="og:image" content="/static/image/reactconf.jpg"/>
-                <meta name="og:url" content="http://reactconf.ir"/>
-                <meta name="og:site_name" content="React Conf | Javascript & ReactJS Conference"/>
-                <meta name="og:locale" content="en_US"/>
-                <meta name="og:type" content="website"/>
+                <meta name="robots" content="index, follow" />
+                <meta name="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…" />
+                <meta name="image" content="/static/image/reactconf.jpg" />
+                <meta itemProp="name" content="React Conf | Javascript & ReactJS Conference" />
+                <meta itemProp="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…" />
+                <meta itemProp="image" content="/static/image/reactconf.jpg" />
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="React Conf | Javascript & ReactJS Conference" />
+                <meta name="twitter:description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…" />
+                <meta name="twitter:site" content="@reactconf_ir" />
+                <meta name="twitter:image:src" content="/static/image/icon/apple-touch-icon.png" />
+                <meta name="og:title" content="React Conf | Javascript & ReactJS Conference" />
+                <meta name="og:description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…" />
+                <meta name="og:image" content="/static/image/reactconf.jpg" />
+                <meta name="og:url" content="http://reactconf.ir" />
+                <meta name="og:site_name" content="React Conf | Javascript & ReactJS Conference" />
+                <meta name="og:locale" content="en_US" />
+                <meta name="og:type" content="website" />
                 <link rel="apple-touch-icon" href="/static/image/icon/apple-touch-icon.png" />
                 <link rel="apple-touch-icon" sizes="57x57" href="/static/image/icon/apple-touch-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="72x72" href="/static/image/icon/apple-touch-icon-72x72.png" />
