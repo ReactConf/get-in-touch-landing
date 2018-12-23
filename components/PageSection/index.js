@@ -19,29 +19,27 @@ const PageHeading = styled.h2`
   margin: 0 0 2rem 0;
 `;
 
-class PageSection extends Component {
-  render() {
-    const { title, size, bg, children, id } = this.props;
-    return (
-      <Fragment>
-        <Page padding={size} background={bg} id={id}>
-          <div className="container">
-            <Row type="flex" justify="center">
-              <Col span={24}>
-                <PageHeading><IntlMessages id={title} /></PageHeading>
-              </Col>
-            </Row>
-            {children}
-          </div>
-        </Page>
-      </Fragment>
-    );
-  }
+const PageSection = (props) => {
+	const { title, size, bg, children, id } = props;
+	return (
+		<Fragment>
+      <Page padding={size} background={bg} id={id}>
+        <div className="container">
+          <Row type="flex" justify="center">
+            <Col span={24}>
+              <PageHeading><IntlMessages id={title} /></PageHeading>
+            </Col>
+          </Row>
+          {children}
+        </div>
+      </Page>
+		</Fragment>
+	);
 }
 PageSection.propTypes = {
-    title: PropTypes.string.isRequired,
-    size: PropTypes.number.isRequired,
     bg: PropTypes.string.isRequired,
+    size: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
     id: PropTypes.string,
 };
 export default PageSection;
