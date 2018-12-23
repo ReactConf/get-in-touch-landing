@@ -21,7 +21,7 @@ const SocialIconsBox = styled.div`
 function renderFarm(items) {
     return items.map((item, index) => {
         return (
-            <a target="_blank" href={item.url} key={index}>
+            <a key={`social-farm-${index}`} href={item.url} target="_blank" rel="noopener noreferrer">
                 <i className={"fab " + item.icon} />
             </a>
         );

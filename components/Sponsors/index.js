@@ -37,7 +37,7 @@ const SponsorsBox = styled.div`
 function renderFarm(items) {
   return items.map((item, index) => {
     return (
-        <a target="_blank" href={item.url} key={index}>
+        <a key={`sponsers-${index}`} href={item.url} target="_blank" rel="noopener noreferrer">
           <img src={item.image} alt={item.name} />
         </a>
     );

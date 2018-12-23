@@ -74,7 +74,7 @@ function renderFarm(items,type) {
   const effect = type == "team" ? <AvatarEffect /> : <AvatarEffectJury /> ;
   return items.map((item, index) => {
     return (
-      <Col xs={12} sm={12} md={6} lg={4} xl={4} key={index}>
+      <Col key={`teams-farm-${index}`} lg={4} md={6} sm={12} xl={4} xs={12}>
         <Avatar>
           <img src={item.image} alt={item.name} />
           {effect}
