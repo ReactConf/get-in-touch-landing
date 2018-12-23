@@ -49,7 +49,7 @@ const FooterLayout = () => {
                         <IntlMessages id="contact.follow" />
                     </h3>
                     <SocialIcons items={items} size={2} />
-                    <a href={`mailto:${config.email}`} target="_blank">
+                    <a href={`mailto:${config.email}`} target="_blank" rel="noopener noreferrer">
                         <h3>
                             <IntlMessages id="contact.email" />
                         </h3>
