@@ -25,7 +25,7 @@
     "js-cookie": "^2.2.0",
     "js-info-bubble": "git+https://github.com/RedQ/js-info-bubble.git",
     "js-rich-marker": "^1.1.2",
-    "less": "^2.7.3",
+    "less": "^3.9.0",
     "lodash": "^4.17.11",
     "lru-cache": "^4.1.1",
     "next": "^5.0.0",
@@ -97,7 +97,7 @@
     "styled-jsx-plugin-sass": "^0.2.4",
     "styled-theme": "^0.3.3",
     "styled-tools": "^0.1.4",
-    "uppy": "^0.18.0",
+    "uppy": "^0.29.0",
     "uuid": "^3.1.0",
     "whitelist-object": "^1.0.0"
   },
@@ -121,6 +121,6 @@
     "webpack-bundle-analyzer": "^2.9.2"
   },
   "engines": {
-    "node": "9.3.x"
+    "node": "10.15.x"
   }
 }

@@ -57,6 +57,7 @@ module.exports = {
                     {
                         loader: "less-loader",
                         options: {
+                            javascriptEnabled: true,
                             includePaths: ["styles", "node_modules"]
                                 .map(d => path.join(__dirname, d))
                                 .map(g => glob.sync(g))
