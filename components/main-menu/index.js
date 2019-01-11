@@ -100,13 +100,11 @@ class MainMenu extends Component {
                 <Anchor affix={false}><Anchor.Link href="#speaker" title={<IntlMessages id="topmenu.speaker" />}/></Anchor>
             </Btn>
           </Link>*/}
-          <Link href="/">
             <Btn>
               <a href="http://blog.reactconf.ir" target="_blank">
                 <IntlMessages id="topmenu.blog" />
               </a>
             </Btn>
-          </Link>
         </Menu>
         <i className="fas fa-bars menu-fold" onClick={this.showDrawer} />
         <Drawer
