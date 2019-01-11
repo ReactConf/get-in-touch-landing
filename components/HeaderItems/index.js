@@ -42,7 +42,12 @@ const MenuItems = [
     url: "#contact",
     text: <IntlMessages id="topmenu.contact" />,
     type: "internal"
-  }
+  },
+  {
+    url: "http://blog.reactconf.ir",
+    text: <IntlMessages id="topmenu.blog" />,
+    type: "exnternal"
+  },
 ];
 const HeaderItems = () => {
   return (

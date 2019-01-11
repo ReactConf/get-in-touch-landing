@@ -95,9 +95,16 @@ class MainMenu extends Component {
     return (
       <MainMenuStyle>
         <Menu mode="horizontal" className="main-menu">
-          <Link href="/">
+          {/*<Link href="/">
             <Btn>
                 <Anchor affix={false}><Anchor.Link href="#speaker" title={<IntlMessages id="topmenu.speaker" />}/></Anchor>
+            </Btn>
+          </Link>*/}
+          <Link href="/">
+            <Btn>
+              <a href="http://blog.reactconf.ir" target="_blank">
+                <IntlMessages id="topmenu.blog" />
+              </a>
             </Btn>
           </Link>
         </Menu>
