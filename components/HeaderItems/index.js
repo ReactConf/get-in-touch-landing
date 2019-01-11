@@ -46,7 +46,7 @@ const MenuItems = [
   {
     url: "http://blog.reactconf.ir",
     text: <IntlMessages id="topmenu.blog" />,
-    type: "exnternal"
+    type: "external"
   },
 ];
 const HeaderItems = () => {

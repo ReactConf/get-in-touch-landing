@@ -68,8 +68,8 @@ const PaperCard = ({ title, body, btn, btnlink }) => {
           href="https://docs.google.com/document/d/1Obnipcy4l8_uPEfLB6jS-v0ND3JycxAnoSfOE1GocQQ"
           className="ant-btn  ant-btn-lg "
         >
-          <i className="fas fa-download"/>
-          <span> <IntlMessages id="btnDlTemplate" /></span>
+          <i className="fas fa-download"/>{" "}
+          <span>{" "} <IntlMessages id="btnDlTemplate" /></span>
         </a>
       </CardFace>
     </Fragment>
