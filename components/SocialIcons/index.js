@@ -1,21 +1,21 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const SocialIconsBox = styled.div`
-  text-align: center;
-  width: 100%;
-  margin: 0.75rem 0;
-  color: #000;
-  font-size: ${({ iconsize }) => iconsize + "rem"};
-  a {
-    display: inline-block;
-    margin: 0 5px;
-    color: #82848d !important;
-    &:hover {
-      color: #111 !important;
+    text-align: center;
+    width: 100%;
+    margin: 0.75rem 0;
+    color: #000;
+    font-size: ${({ iconsize }) => iconsize + "rem"};
+    a {
+        display: inline-block;
+        margin: 0 5px;
+        color: #82848d !important;
+        &:hover {
+            color: #111 !important;
+        }
     }
-  }
 `;
 
 function renderFarm(items) {
@@ -33,6 +33,6 @@ const SocialIcons = ({ items, size }) => {
 };
 SocialIcons.propTypes = {
     items: PropTypes.array.isRequired,
-    size: PropTypes.number
+    size: PropTypes.number,
 };
 export default SocialIcons;

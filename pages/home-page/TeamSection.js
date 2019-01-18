@@ -3,61 +3,61 @@ import PageSection from "components/PageSection/index";
 import TeamMembers from "components/TeamMembers/index";
 
 const items = [
-  {
-    image: "/static/image/people/milad.jpg",
-    name: "Milad Heydari",
-    socials: [
-      {
-        url: "https://linkedin.com/in/miladheydari",
-        icon: "fa-linkedin"
-      },
-      {
-        url: "https://twitter.com/iammilaad",
-        icon: "fa-twitter"
-      }
-    ]
-  },
-  {
-    image: "/static/image/people/mohsen.jpg",
-    name: "Mohsen Barati",
-    socials: [
-      {
-        url: "https://linkedin.com/in/mohsenbarati",
-        icon: "fa-linkedin"
-      },
-      {
-        url: "https://twitter.com/mohsenـbarati",
-        icon: "fa-twitter"
-      }
-    ]
-  },
-  {
-    image: "/static/image/people/ahmad.jpg",
-    name: "Ahmad Karimpour",
-    socials: [
-      {
-        url: "https://www.linkedin.com/in/ahmadina",
-        icon: "fa-linkedin"
-      },
-      {
-        url: "https://twitter.com/iahmadina",
-        icon: "fa-twitter"
-      }
-    ]
-  },
+    {
+        image: "/static/image/people/milad.jpg",
+        name: "Milad Heydari",
+        socials: [
+            {
+                url: "https://linkedin.com/in/miladheydari",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/iammilaad",
+                icon: "fa-twitter",
+            },
+        ],
+    },
+    {
+        image: "/static/image/people/mohsen.jpg",
+        name: "Mohsen Barati",
+        socials: [
+            {
+                url: "https://linkedin.com/in/mohsenbarati",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/mohsenـbarati",
+                icon: "fa-twitter",
+            },
+        ],
+    },
+    {
+        image: "/static/image/people/ahmad.jpg",
+        name: "Ahmad Karimpour",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/ahmadina",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/iahmadina",
+                icon: "fa-twitter",
+            },
+        ],
+    },
     {
         image: "/static/image/people/armin.jpg",
         name: "Armin Ebrahimi",
         socials: [
             {
                 url: "https://www.linkedin.com/in/arm1ne/",
-                icon: "fa-linkedin"
+                icon: "fa-linkedin",
             },
             {
                 url: "https://twitter.com/Arm1nE",
-                icon: "fa-twitter"
-            }
-        ]
+                icon: "fa-twitter",
+            },
+        ],
     },
     {
         image: "/static/image/people/arash.jpg",
@@ -65,13 +65,13 @@ const items = [
         socials: [
             {
                 url: "https://www.linkedin.com/in/ara4sh",
-                icon: "fa-linkedin"
+                icon: "fa-linkedin",
             },
             {
                 url: "https://twitter.com/Ara4Sh",
-                icon: "fa-twitter"
-            }
-        ]
+                icon: "fa-twitter",
+            },
+        ],
     },
     {
         image: "/static/image/people/idin.jpg",
@@ -79,13 +79,13 @@ const items = [
         socials: [
             {
                 url: "https://ir.linkedin.com/in/idin-khayami-93163aa3",
-                icon: "fa-linkedin"
+                icon: "fa-linkedin",
             },
             {
                 url: "https://twitter.com/iiciigiirl",
-                icon: "fa-twitter"
-            }
-        ]
+                icon: "fa-twitter",
+            },
+        ],
     },
     {
         image: "/static/image/people/samir.jpg",
@@ -93,13 +93,13 @@ const items = [
         socials: [
             {
                 url: "http://www.linkedin.com/in/radismedia",
-                icon: "fa-linkedin"
+                icon: "fa-linkedin",
             },
             {
                 url: "http://www.instagram.com/radismedia",
-                icon: "fa-instagram"
-            }
-        ]
+                icon: "fa-instagram",
+            },
+        ],
     },
     {
         image: "/static/image/people/iman.jpg",
@@ -107,26 +107,21 @@ const items = [
         socials: [
             {
                 url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
-                icon: "fa-linkedin"
+                icon: "fa-linkedin",
             },
             {
                 url: "https://twitter.com/idrstreet",
-                icon: "fa-twitter"
-            }
-        ]
-    }
+                icon: "fa-twitter",
+            },
+        ],
+    },
 ];
 const TeamSection = () => {
-  return (
-    <PageSection
-      title="team.heading"
-      size={7}
-      bg="#e3e2dd"
-      id="team"
-    >
-      <TeamMembers items={items} type={'team'} />
-    </PageSection>
-  );
+    return (
+        <PageSection title="team.heading" size={7} bg="#e3e2dd" id="team">
+            <TeamMembers items={items} type={"team"} />
+        </PageSection>
+    );
 };
 
 export default TeamSection;

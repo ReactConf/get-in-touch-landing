@@ -2,7 +2,7 @@ import Enlang from "./entries/en_US";
 import { addLocaleData } from "react-intl";
 
 const AppLocale = {
-  en: Enlang
+    en: Enlang,
 };
 addLocaleData(AppLocale.en.data);
 
