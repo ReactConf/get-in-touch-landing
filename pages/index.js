@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import MasterLayout from "components/layouts/Master";
 import { Helmet } from "react-helmet";
 import HomeSection from "./home-page/HomeSection";
-// import SponsorsSection from "./home-page/SponsorsSection";
+import SponsorsSection from "./home-page/SponsorsSection";
 import BecomeSpeakerSection from "./home-page/BecomeSpeakerSection";
 import TeamSection from "./home-page/TeamSection";
 import HeaderItems from "components/HeaderItems";
