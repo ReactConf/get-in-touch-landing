@@ -14,6 +14,9 @@ const HomeBackgroundBox = styled.div`
       display : none;
     `};
 `;
+const Img = styled.img `
+float: right;
+`;
 const Bars = styled.div`
   position: absolute;
   bottom: 0;
@@ -36,7 +39,7 @@ const HomeBackground = () => {
           lg={{ span: 16 }}
           xl={{ span: 14 }}
         >
-          <img src="/static/image/splash.svg" />
+          <Img  src="/static/image/splash.svg" />
         </Col>
       </Row>
       <Bars>

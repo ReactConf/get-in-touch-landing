@@ -14,7 +14,6 @@ const HomePage = () => {
         <Fragment>
             <Helmet>
                 <title>ReactConf 2019 | Javascript & ReactJS Conference</title>
-                <meta name="keywords" content="ReactConf, react conference, js conference" />
                 <meta name="description" content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…" />
             </Helmet>
             <MasterLayout>

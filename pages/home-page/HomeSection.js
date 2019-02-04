@@ -35,7 +35,17 @@ const Describe = styled.h2`
       color : #fff !important;
     `};
 `;
-
+const Title = styled.h1`
+  color: #03a9f4;
+  font-size: 2rem;
+  font-family: "LatoWebBlack";
+  display: block;
+  width: 100%;
+  margin: 0.3em 0 0.15em 0;
+  ${media.tablet`
+      color : #fff !important;
+    `};
+`;
 class HomeSection extends Component {
   render() {
     return (
@@ -60,6 +70,9 @@ class HomeSection extends Component {
                 <CityText>
                   <IntlMessages id="logo.tehran" />
                 </CityText>
+                <Title>
+                  <IntlMessages id="home.title" />
+                </Title>
                 <Describe>
                   <IntlMessages id="home.describe" />
                 </Describe>
