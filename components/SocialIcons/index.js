@@ -18,6 +18,24 @@ const SocialIconsBox = styled.div`
     }
 `;
 
+const SocialIconsBoxSpeakers = styled.div`
+    text-align: center;
+    width: 100%;
+    margin: 0.75rem 0;
+    color: #000;
+    
+    font-size: ${({ iconsize }) => iconsize + "rem"};
+    a {
+        display: inline-block;
+        margin: 38% 5px;
+        color: #fff !important;
+        &:hover {
+            color: #111 !important;
+        }
+    }
+`;
+
+
 function renderFarm(items) {
     return items.map((item, index) => {
         return (
@@ -28,8 +46,14 @@ function renderFarm(items) {
     });
 }
 
-const SocialIcons = ({ items, size }) => {
-    return <SocialIconsBox iconsize={size}>{renderFarm(items)}</SocialIconsBox>;
+const SocialIcons = ({ items, size, type='default' }) => {
+    if(type==='speakers'){
+        return(
+            <SocialIconsBoxSpeakers iconsize={size}>{renderFarm(items)}</SocialIconsBoxSpeakers>)
+    }else{
+        return (<SocialIconsBox iconsize={size}>{renderFarm(items)}</SocialIconsBox>)
+    }
+   
 };
 SocialIcons.propTypes = {
     items: PropTypes.array.isRequired,

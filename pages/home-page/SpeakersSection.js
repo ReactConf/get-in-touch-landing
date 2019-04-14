@@ -124,7 +124,7 @@ const SpeakersSection = () => {
         <PageSection
             title="speakers.title"
             size={8}
-            bg={"#edece8"}
+            bg={"#e3e2dd"}
             id="speaker"
         >
            <Speakers items={items} type={"team"} />

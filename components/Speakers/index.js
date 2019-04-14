@@ -14,6 +14,9 @@ const Titles = styled.h3`
     text-align: left;
 `;
 const Avatar = styled.div`
+    &:hover ${SocialOverlay} {
+      opacity: 1  ;
+    }
     text-align: center;
     width: 80%;
     max-width: 200px;
@@ -52,6 +55,17 @@ const AvatarEffect = styled.div`
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03f1f4', endColorstr='#5f03f4',GradientType=1 );*/
 `;
+const SocialOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: linear-gradient( 135deg,rgba(132, 104, 245, 0.51) 0%,rgba(236, 116, 231, 0.55) 50% );  `;
 
 const AvatarEffectJury = styled.div`
     position: absolute;
@@ -78,15 +92,28 @@ const AvatarEffectJury = styled.div`
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFD54F', endColorstr='#c62828',GradientType=1 );*/
 `;
 
+const Wrapper = styled.div`
+  .ant-col-xs-24:hover ${SocialOverlay} {
+     opacity:1
+  }
+  .ant-col-xs-23 .i :{
+    color: white
+  }
+
+`;
+
 function renderFarm(items, type) {
     const effect = type == "team" ? <AvatarEffect /> : <AvatarEffectJury />;
     return items.map((item, index) => {
         return (
-            <Col xs={24} sm={12} md={24} lg={12} xl={12} key={index} style={{marginBottom:20}}>
+            <Col xs={24} sm={12} md={24} lg={12} xl={12} key={index} style={{marginBottom:20,}}>
               <Col xs={12} sm={24} md={12} lg={12} xl={12} key={index}>
                 <Avatar>
                     <img src={item.image} alt={item.name} />
                     {effect}
+                    <SocialOverlay>
+                      <SocialIcons type={'speakers'}items={item.socials} size={1.4} />
+                    </SocialOverlay>
                 </Avatar>
              </Col>
              <Col xs={12} sm={12} md={12} lg={12} xl={12} key={index}>
@@ -94,7 +121,6 @@ function renderFarm(items, type) {
                 <SpName> {item.desc} </SpName>
                 <Titles>Lecture : </Titles>
                 <SpName> {item.lecture}</SpName>
-                <SocialIcons items={item.socials} size={1.4} />
                 <br />
              </Col>
             </Col>
@@ -104,9 +130,11 @@ function renderFarm(items, type) {
 
 const Speakers = ({ items, type }) => {
     return (
+<Wrapper>
         <Row type="flex" justify="center">
             {renderFarm(items, type)}
         </Row>
+    </Wrapper>
     );
 };
 Speakers.propTypes = {
