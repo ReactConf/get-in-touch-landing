@@ -35,5 +35,6 @@
   "form.modal.phone": "Phone Number",
   "form.modal.phone.validation": "Please input your phone number!",
   "form.describe": "Get the latest event news on your devices",
-  "btnDlTemplate" : "Sample Template"
+  "btnDlTemplate" : "Sample Template",
+  "speakers.title" : "React conf Speakers"
 }

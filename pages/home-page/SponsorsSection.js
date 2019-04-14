@@ -16,19 +16,12 @@ const items = [
     {
         image: "/static/image/sponsors/karlib.svg",
         name: "karlib",
-        url: "http://karlib.com",
+        url: "http://karlib.com" ,
     },
 ];
 const SponsorsSection = () => {
     return (
         <PageSection title="sponsors.heading" size={2} bg={"#fff"}>
-            <a
-                target="_blank"
-                href={`mailto:${config.email}`}
-                className="ant-btn ant-btn-lg ant-btn-dashed"
-            >
-                become a sponsor
-            </a>
             <Sponsors items={items} />
         </PageSection>
     );

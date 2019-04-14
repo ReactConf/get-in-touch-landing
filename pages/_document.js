@@ -48,7 +48,7 @@ export default class ReactConf extends Document {
         const main = sheet.collectStyles(<Main />);
         const styleTags = sheet.getStyleElement();
         return (
-            <html {...this.helmetHtmlAttrComponents}>
+            <html>
                 <Head>
                     {this.helmetHeadComponents}
                     <script
