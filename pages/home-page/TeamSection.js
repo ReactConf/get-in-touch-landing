@@ -15,6 +15,10 @@ const items = [
                 url: "https://twitter.com/iammilaad",
                 icon: "fa-twitter",
             },
+            {
+                url: "https://twitter.com/miladbruce",
+                icon: "fa-github",
+            },
         ],
     },
     {
@@ -56,6 +60,24 @@ const items = [
             {
                 url: "https://twitter.com/Arm1nE",
                 icon: "fa-twitter",
+            },
+        ],
+    },
+    {
+        image: "/static/image/people/arya.jpg",
+        name: "Arya Sadeghi",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/aryasadeghy/",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/aryasadeghy",
+                icon: "fa-twitter",
+            },
+            {
+                url: "https://twitter.com/aryasadeghy",
+                icon: "fa-github",
             },
         ],
     },

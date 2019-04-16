@@ -6,12 +6,22 @@ import Col from "antd/lib/col";
 import SocialIcons from "components/SocialIcons";
 
 
-const SpName = styled.p`
+const SpSubject = styled.p`
     text-align: left;
     font-size : 1rem;
+    color:#000;
+    margin:0;
+`;
+const SpDesc = styled.p`
+    text-align: left;
+    font-size : 1rem;
+ 
 `;
 const Titles = styled.h3`
-    text-align: left;
+   text-align: left;
+    font-family: "LatoWebMedium";
+    font-weight: 900;
+    font-size: 1.5em;
 `;
 const Avatar = styled.div`
     &:hover ${SocialOverlay} {
@@ -107,22 +117,21 @@ function renderFarm(items, type) {
     return items.map((item, index) => {
         return (
             <Col xs={24} sm={12} md={24} lg={12} xl={12} key={index} style={{marginBottom:20,}}>
-              <Col xs={12} sm={24} md={12} lg={12} xl={12} key={index}>
-                <Avatar>
-                    <img src={item.image} alt={item.name} />
-                    {effect}
-                    <SocialOverlay>
-                      <SocialIcons type={'speakers'}items={item.socials} size={1.4} />
-                    </SocialOverlay>
-                </Avatar>
-             </Col>
-             <Col xs={12} sm={12} md={12} lg={12} xl={12} key={index}>
-                <Titles>{item.name}</Titles>
-                <SpName> {item.desc} </SpName>
-                <Titles>Lecture : </Titles>
-                <SpName> {item.lecture}</SpName>
-                <br />
-             </Col>
+                <Col xs={12} sm={24} md={12} lg={12} xl={12} key={index}>
+                    <Avatar>
+                        <img src={item.image} alt={item.name} />
+                        {effect}
+                        <SocialOverlay>
+                            <SocialIcons type={'speakers'}items={item.socials} size={1.4} />
+                        </SocialOverlay>
+                    </Avatar>
+                </Col>
+                <Col xs={12} sm={12} md={12} lg={12} xl={12} key={index}>
+                    <Titles>{item.name}</Titles>
+                    <SpSubject> {item.lecture}</SpSubject>
+                    <SpDesc> {item.desc} </SpDesc>
+                    <br />
+                </Col>
             </Col>
         );
     });
@@ -130,11 +139,11 @@ function renderFarm(items, type) {
 
 const Speakers = ({ items, type }) => {
     return (
-<Wrapper>
-        <Row type="flex" justify="center">
-            {renderFarm(items, type)}
-        </Row>
-    </Wrapper>
+        <Wrapper>
+            <Row type="flex" justify="center">
+                {renderFarm(items, type)}
+            </Row>
+        </Wrapper>
     );
 };
 Speakers.propTypes = {
