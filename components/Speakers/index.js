@@ -116,17 +116,17 @@ function renderFarm(items, type) {
     const effect = type == "team" ? <AvatarEffect /> : <AvatarEffectJury />;
     return items.map((item, index) => {
         return (
-            <Col xs={24} sm={12} md={24} lg={12} xl={12} key={index} style={{marginBottom:20,}}>
-                <Col xs={12} sm={24} md={12} lg={12} xl={12} key={index}>
+            <Col xs={24} sm={12} md={24} lg={12} xl={12} key={index} style={{marginBottom:20}}>
+                <Col xs={12} sm={24} md={12} lg={12} xl={12}>
                     <Avatar>
                         <img src={item.image} alt={item.name} />
                         {effect}
                         <SocialOverlay>
-                            <SocialIcons type={'speakers'}items={item.socials} size={1.4} />
+                            <SocialIcons type={'speakers'} items={item.socials} size={1.4} />
                         </SocialOverlay>
                     </Avatar>
                 </Col>
-                <Col xs={12} sm={12} md={12} lg={12} xl={12} key={index}>
+                <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                     <Titles>{item.name}</Titles>
                     <SpSubject> {item.lecture}</SpSubject>
                     <SpDesc> {item.desc} </SpDesc>

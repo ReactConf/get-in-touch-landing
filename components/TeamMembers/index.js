@@ -80,6 +80,7 @@ function renderFarm(items, type) {
                     {effect}
                 </Avatar>
                 <h3>{item.name}</h3>
+                <h4>{item.desc}</h4>
                 <SocialIcons items={item.socials} size={1.4} />
                 <br />
             </Col>

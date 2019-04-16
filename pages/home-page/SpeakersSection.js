@@ -114,7 +114,7 @@ const items = [
         image: "/static/image/people/ehsun.jpg",
         name: "Ehsun Mohammadi",
         desc : 'Advanced Efficiency and Reusability of React Components. that`s the answer.',
-        lecture : 'Why are we using React.js in our projects?',
+        lecture : 'Why are we using React.js in our project?',
         socials: [
             {
                 url: "https://www.linkedin.com/in/ehsanmohammadi/",

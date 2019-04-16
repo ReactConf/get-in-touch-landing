@@ -6,6 +6,7 @@ const items = [
     {
         image: "/static/image/people/milad.jpg",
         name: "Milad Heydari",
+        desc: "Founder of Reactconf",
         socials: [
             {
                 url: "https://linkedin.com/in/miladheydari",
@@ -24,6 +25,7 @@ const items = [
     {
         image: "/static/image/people/mohsen.jpg",
         name: "Mohsen Barati",
+        desc: "Project Manager",
         socials: [
             {
                 url: "https://linkedin.com/in/mohsenbarati",
@@ -38,6 +40,7 @@ const items = [
     {
         image: "/static/image/people/ahmad.jpg",
         name: "Ahmad Karimpour",
+        desc: "Reactconf Organizer",
         socials: [
             {
                 url: "https://www.linkedin.com/in/ahmadina",
@@ -49,23 +52,24 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/armin.jpg",
-        name: "Armin Ebrahimi",
-        socials: [
-            {
-                url: "https://www.linkedin.com/in/arm1ne/",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/Arm1nE",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/armin.jpg",
+    //     name: "Armin Ebrahimi",
+    //     socials: [
+    //         {
+    //             url: "https://www.linkedin.com/in/arm1ne/",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/Arm1nE",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
     {
         image: "/static/image/people/arya.jpg",
         name: "Arya Sadeghi",
+        desc: "Community Lounge",
         socials: [
             {
                 url: "https://www.linkedin.com/in/aryasadeghy/",
@@ -81,23 +85,24 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/idin.jpg",
-        name: "Idin Khayami",
-        socials: [
-            {
-                url: "https://ir.linkedin.com/in/idin-khayami-93163aa3",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/iiciigiirl",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/idin.jpg",
+    //     name: "Idin Khayami",
+    //     socials: [
+    //         {
+    //             url: "https://ir.linkedin.com/in/idin-khayami-93163aa3",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/iiciigiirl",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
     {
         image: "/static/image/people/samir.jpg",
         name: "Samir Rad",
+        desc: "Creative Generalist",
         socials: [
             {
                 url: "http://www.linkedin.com/in/radismedia",
@@ -109,20 +114,20 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/iman.jpg",
-        name: "Iman Aletaha",
-        socials: [
-            {
-                url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/idrstreet",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/iman.jpg",
+    //     name: "Iman Aletaha",
+    //     socials: [
+    //         {
+    //             url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/idrstreet",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
 ];
 const TeamSection = () => {
     return (
