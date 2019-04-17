@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import IntlMessages from "components/utility/intlMessages";
 import styled from "styled-components";
+import {Icon} from 'antd';
 
 const CardTitle = styled.h4`
     font-size: 1.4rem;
@@ -49,11 +50,13 @@ const CardFace = styled.div`
     }
 `;
 
-const PaperCard = ({ title, body, btn, btnlink }) => {
+const PaperCard = ({ title, body, btn, btnlink, withSample }) => {
     return (
         <Fragment>
             <CardFace>
                 <CardTitle>
+                    <Icon type="bulb" />
+                    <br/>
                     <IntlMessages id={title} />
                 </CardTitle>
                 <CardParagraph>
@@ -66,19 +69,22 @@ const PaperCard = ({ title, body, btn, btnlink }) => {
                 >
                     <IntlMessages id={btn} />
                 </a>
-                <br />
-                <br />
-                <a
-                    target="_blank"
-                    href="https://docs.google.com/document/d/1Obnipcy4l8_uPEfLB6jS-v0ND3JycxAnoSfOE1GocQQ"
-                    className="ant-btn  ant-btn-lg "
-                >
-                    <i className="fas fa-download" />{" "}
-                    <span>
+                {withSample ?
+                    <Fragment>
+                        <br />
+                        <br />
+                        <a
+                            target="_blank"
+                            href="https://docs.google.com/document/d/1Obnipcy4l8_uPEfLB6jS-v0ND3JycxAnoSfOE1GocQQ"
+                            className="ant-btn  ant-btn-lg "
+                        >
+                            <i className="fas fa-download" />{" "}
+                            <span>
                         {" "}
-                        <IntlMessages id="btnDlTemplate" />
+                                <IntlMessages id="btnDlTemplate" />
                     </span>
-                </a>
+                        </a>
+                    </Fragment> : <Fragment/>}
             </CardFace>
         </Fragment>
     );

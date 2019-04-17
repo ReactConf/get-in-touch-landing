@@ -39,6 +39,7 @@ const BecomeSpeakerSection = () => {
                         title="speaker.title"
                         body="speaker.body"
                         btn="speaker.btn"
+                        withSample={true}
                         btnlink={`mailto:${config.email}`}
                     />
                 </Col>

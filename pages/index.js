@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import MasterLayout from "components/layouts/Master";
-import { Helmet } from "react-helmet";
+import {Helmet} from "react-helmet";
 import HomeSection from "./home-page/HomeSection";
 import SponsorsSection from "./home-page/SponsorsSection";
 import BecomeSpeakerSection from "./home-page/BecomeSpeakerSection";
@@ -9,6 +9,7 @@ import HeaderItems from "components/HeaderItems";
 import HomeBackground from "./home-page/HomeBackground";
 import SpeakersSection from './home-page/SpeakersSection';
 import JurySection from './home-page/JurySection';
+import CallOutSponsors from './home-page/CallOutSponsors'
 
 const HomePage = () => {
     return (
@@ -21,14 +22,15 @@ const HomePage = () => {
                 />
             </Helmet>
             <MasterLayout>
-                <HeaderItems />
-                <HomeSection />
-                <HomeBackground />
-                {/*<SponsorsSection />*/}
+                <HeaderItems/>
+                <HomeSection/>
+                <HomeBackground/>
+                {/*<SponsorsSection/>*/}
+                <CallOutSponsors/>
                 <SpeakersSection/>
-                <JurySection />
-                {/*<Become  SpeakerSection />*/}
-                <TeamSection />
+                <JurySection/>
+                {/*<BecomeSpeakerSection />*/}
+                <TeamSection/>
             </MasterLayout>
         </Fragment>
     );

@@ -22,21 +22,21 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/mohsen.jpg",
-        name: "Mohsen Barati",
-        desc: "Project Manager",
-        socials: [
-            {
-                url: "https://linkedin.com/in/mohsenbarati",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/mohsenـbarati",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/mohsen.jpg",
+    //     name: "Mohsen Barati",
+    //     desc: "Project Manager",
+    //     socials: [
+    //         {
+    //             url: "https://linkedin.com/in/mohsenbarati",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/mohsenـbarati",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
     {
         image: "/static/image/people/ahmad.jpg",
         name: "Ahmad Karimpour",
