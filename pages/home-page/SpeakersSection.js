@@ -29,12 +29,8 @@ const items = [
         lecture : 'An Introduction to Real-Time programming in Javascript',
         socials: [
             {
-                url: "https://linkedin.com/in/mohsenbarati",
+                url: "https://www.linkedin.com/in/ana-lava-4466348a/",
                 icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/mohsenـbarati",
-                icon: "fa-twitter",
             },
         ],
     },
@@ -141,12 +137,16 @@ const items = [
         lecture : 'How Diffing Algorithm Works In React',
         socials: [
             {
-                url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
+                url: "http://linkedin.com/in/theham3d",
                 icon: "fa-linkedin",
             },
             {
-                url: "https://twitter.com/idrstreet",
+                url: "https://twitter.com/theham3d",
                 icon: "fa-twitter",
+            },
+            {
+                url: "https://github.com/theham3d",
+                icon: "fa-github",
             },
         ],
     },
