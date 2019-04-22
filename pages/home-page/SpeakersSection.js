@@ -168,8 +168,8 @@ const SpeakersSection = () => {
     return (
         <PageSection
             title="speakers.title"
-            size={8}
-            bg={"#e3e2dd"}
+            size={13}
+            bg={"#fff"}
             id="speaker"
         >
            <Speakers items={items} type={"team"} />

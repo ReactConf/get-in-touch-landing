@@ -13,7 +13,7 @@ const items =
 const CallOutSponsors = () => {
     return (
         <Fragment>
-            <PageSection title="Become A Sponsor" size={1} bg="#edece8">
+            <PageSection title="Become A Sponsor" size={8} bg="#fff">
                 <SponsorsCall/>
             </PageSection>
         </Fragment>
