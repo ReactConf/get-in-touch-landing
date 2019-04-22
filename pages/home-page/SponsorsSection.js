@@ -5,6 +5,16 @@ import config from "config";
 
 const media = [
     {
+        image: "/static/image/sponsors/virgool.png",
+        name: "virgool.io",
+        url: "https://virgool.io/",
+    },
+    {
+        image: "/static/image/sponsors/aasaam.png",
+        name: "aasaam.com",
+        url: "https://aasaam.com/",
+    },
+    {
         image: "/static/image/sponsors/zoomtech.png",
         name: "zoomtech.org",
         url: "https://zoomtech.org/",
@@ -13,11 +23,6 @@ const media = [
         image: "/static/image/sponsors/gadgetnews.png",
         name: "gadgetnews.net",
         url: "https://gadgetnews.net",
-    },
-    {
-        image: "/static/image/sponsors/aasaam.png",
-        name: "aasaam.com",
-        url: "https://aasaam.com/",
     },
     {
         image: "/static/image/sponsors/giftak.png",
