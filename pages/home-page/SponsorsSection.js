@@ -3,57 +3,34 @@ import PageSection from "components/PageSection/index";
 import Sponsors from "components/Sponsors/index";
 import config from "config";
 
-const items = [
+const media = [
     {
-        image: "http://coderconf.org/static/image/logos/neshan.png",
-        name: "sibapp",
-        url: "http://coderconf.org/static/image/logos/sibapp.svg",
+        image: "/static/image/sponsors/zoomtech.png",
+        name: "zoomtech.org",
+        url: "https://zoomtech.org/",
     },
     {
-        image: "http://coderconf.org/static/image/logos/sibapp.svg",
-        name: "karlib",
-        url: "http://coderconf.org/static/image/logos/neshan.png",
+        image: "/static/image/sponsors/gadgetnews.png",
+        name: "gadgetnews.net",
+        url: "https://gadgetnews.net",
     },
     {
-        image: "http://coderconf.org/static/image/logos/azinro.svg",
-        name: "karlib",
-        url: "http://coderconf.org/static/image/logos/arvan.png",
+        image: "/static/image/sponsors/aasaam.png",
+        name: "aasaam.com",
+        url: "https://aasaam.com/",
     },
     {
-        image: "http://coderconf.org/static/image/logos/IranServer.png",
-        name: "sibapp",
-        url: "http://coderconf.org/static/image/logos/sibapp.svg",
+        image: "/static/image/sponsors/giftak.png",
+        name: "giftak.net",
+        url: "https://giftak.net/",
     },
-    {
-        image: "http://coderconf.org/static/image/logos/hamyarwp.jpg",
-        name: "karlib",
-        url: "http://coderconf.org/static/image/logos/neshan.png",
-    }, {
-        image: "http://coderconf.org/static/image/logos/neshan.png",
-        name: "sibapp",
-        url: "http://coderconf.org/static/image/logos/sibapp.svg",
-    },
-
 ];
 const SponsorsSection = () => {
     return (
         <Fragment>
-            <PageSection title="Gold Sponsors" size={2} bg={"#fff"}>
+            <PageSection title="Media Sponsors" size={2} bg={"#fff"}>
                 <br/>
-                <Sponsors items={items}/>
-            </PageSection>
-            <br/>
-            <br/>
-            <PageSection title="Gold Sponsors" size={2} bg={"#fff"}>
-                <br/>
-                <Sponsors items={items}/>
-            </PageSection>
-            <br/>
-            <br/>
-
-            <PageSection title="Gold Sponsors" size={2} bg={"#fff"}>
-                <br/>
-                <Sponsors items={items}/>
+                <Sponsors items={media}/>
             </PageSection>
             <br/>
             <br/>

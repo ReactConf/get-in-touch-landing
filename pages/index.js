@@ -25,7 +25,7 @@ const HomePage = () => {
                 <HeaderItems/>
                 <HomeSection/>
                 <HomeBackground/>
-                {/*<SponsorsSection/>*/}
+                <SponsorsSection/>
                 <SpeakersSection/>
                 <JurySection/>
                 {/*<BecomeSpeakerSection />*/}

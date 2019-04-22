@@ -22,6 +22,11 @@ const Image = styled.img`
     width: 90%;
     filter: grayscale(100%);
     fill: black;
+      -webkit-transition: all .5s ease-in-out;
+    &:hover {
+     filter: none;
+  -webkit-filter: grayscale(0%);
+    }
 `;
 
 
