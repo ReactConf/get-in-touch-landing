@@ -115,20 +115,21 @@ const items = [
             },
         ],
     },
-    // {
-    //     image: "/static/image/people/iman.jpg",
-    //     name: "Iman Aletaha",
-    //     socials: [
-    //         {
-    //             url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
-    //             icon: "fa-linkedin",
-    //         },
-    //         {
-    //             url: "https://twitter.com/idrstreet",
-    //             icon: "fa-twitter",
-    //         },
-    //     ],
-    // },
+    {
+        image: "/static/image/people/iman.jpg",
+        name: "Iman Aletaha",
+        desc: "Community Lounge",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/idrstreet",
+                icon: "fa-twitter",
+            },
+        ],
+    },
 ];
 const TeamSection = () => {
     return (

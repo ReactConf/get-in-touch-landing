@@ -37,8 +37,8 @@ const items = [
     {
         image: "/static/image/people/sajjad.jpg",
         name: "Sajjad Beiraghdar",
-        desc : 'Sajjad M.Beiraghdar, Web and JS developer since 200. He worked in great companies for more than 6 years. Now he is working as Freelancer Developer and Works on his own projects. ',
-        lecture : 'React Native\'s New Architecture',
+        desc : 'How React Native works, What issues it has and how they will be addressed in the React Native new architecture.',
+        lecture : 'React Native Architecture',
         socials: [
             {
                 url: "https://www.linkedin.com/in/smbeiragh/",
@@ -57,8 +57,8 @@ const items = [
     {
         image: "/static/image/people/jeremy.jpg",
         name: "Jeremy Webster",
-        desc : 'CEO & Founder Ezerus.Sydney, Australia',
-        lecture : 'Announcing Talk Details Soon',
+        desc : 'The talk will be about where Innovation in technology comes from, based on my own research and experience, and how your choice of technologies in a project can stop innovation',
+        lecture : 'How Your Technology Choices Sop Innovation',
         socials: [
             {
                 url: "https://www.linkedin.com/in/jeremywebstercc/",
