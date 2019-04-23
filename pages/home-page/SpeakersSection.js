@@ -163,10 +163,10 @@ const items = [
         ],
     },
     {
-        image: "/static/image/people/mohammad.jpg",
+        image: "/static/image/people/mamal.jpg",
         name: "Mohamad Jahani",
-        desc : 'Hooks are the new/hot feature of React 16.8. The talk is going to cover some answers to the following questions:What?, Why?, How?',
-        lecture : 'Everything You Need To Know About Hooks',
+        desc : 'Hooks are the new/hot feature of React 16.8. The talk is going to cover some answers to the following questions:What?, Why؟, How?',
+        lecture : 'useHooks!',
         socials: [
             {
                 url: "https://www.linkedin.com/in/mamal72/",
@@ -175,6 +175,10 @@ const items = [
             {
                 url: "https://github.com/mamal72",
                 icon: "fa-github",
+            },
+            {
+                url: "https://twitter.com/mamal72",
+                icon: "fa-twitter",
             },
         ],
     },
