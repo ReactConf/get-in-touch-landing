@@ -10,6 +10,11 @@ const media = [
         url: "https://virgool.io/",
     },
     {
+        image: "/static/image/sponsors/frontcast.png",
+        name: "frontcast",
+        url: "http://frontcast.ir/",
+    },
+    {
         image: "/static/image/sponsors/aasaam.png",
         name: "aasaam.com",
         url: "https://aasaam.com/",

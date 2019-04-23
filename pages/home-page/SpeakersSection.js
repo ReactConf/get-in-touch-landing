@@ -165,7 +165,7 @@ const items = [
     {
         image: "/static/image/people/mamal.jpg",
         name: "Mohamad Jahani",
-        desc : 'Hooks are the new/hot feature of React 16.8. The talk is going to cover some answers to the following questions:What?, Why؟, How?',
+        desc : 'Hooks are the new/hot feature of React 16.8. The talk is going to cover everything you need to know about Hooks and provide some answers to the questions like "What are Hooks?", "Why we should use them?", and "How to use them?"',
         lecture : 'useHooks!',
         socials: [
             {
@@ -182,7 +182,30 @@ const items = [
             },
         ],
     },
-
+    {
+        image: "/static/image/people/negar.jpg",
+        name: "Negar Jamalifard",
+        desc : 'Does CORS error haunts you in every project? Are you tired of asking backend team to handle it? This talk is going to give you all the power to handle this error in development.',
+        lecture : 'How to deal with CORS error in Webpack?',
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/negarjamalifard",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://github.com/negarjf",
+                icon: "fa-github",
+            },
+            {
+                url: "https://twitter.com/NegarJamalifard",
+                icon: "fa-twitter",
+            },
+            {
+                url: "https://medium.com/@negarjf",
+                icon: "fa-medium",
+            },
+        ],
+    },
 ];
 const SpeakersSection = () => {
     return (

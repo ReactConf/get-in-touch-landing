@@ -4,12 +4,16 @@ import IntlMessages from "components/utility/intlMessages";
 import styled from "styled-components";
 import Row from "antd/lib/row";
 import Col from "antd/lib/col";
+import media from "components/layouts/Master/MediaQuery";
 
 const Page = styled.div`
     text-align: center;
     background: ${({ background }) => background};
     width: 100%;
     padding: ${({ padding }) => padding + "rem 0"};
+               ${media.phone`
+         padding: 1rem 0;
+  `};
 `;
 const PageHeading = styled.h2`
     font-family: "LatoWebMedium";

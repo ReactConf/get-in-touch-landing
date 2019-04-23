@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import IntlMessages from "components/utility/intlMessages";
 import styled from "styled-components";
 import {Icon} from 'antd';
+import media from "components/layouts/Master/MediaQuery";
 
 const CardTitle = styled.h4`
     font-size: 1.4rem;
@@ -48,6 +49,19 @@ const CardFace = styled.div`
         z-index: -1;
         box-shadow: 0 2rem 50px rgba(50, 60, 90, 0.13);
     }
+    ${media.smallPhone`
+        background: transparent;
+        box-shadow: none;
+         padding: 0 0rem;
+   &::before {
+        background: transparent;
+        box-shadow: none;
+    }
+     &::after {
+        background: transparent;
+        box-shadow: none;
+    }
+  `};
 `;
 
 const PaperCard = ({ title, body, btn, btnlink, withSample }) => {

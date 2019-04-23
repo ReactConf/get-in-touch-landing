@@ -4,17 +4,24 @@ import styled from "styled-components";
 import Row from "antd/lib/row";
 import Col from "antd/lib/col";
 import SocialIcons from "components/SocialIcons";
-
+import media from "components/layouts/Master/MediaQuery";
 
 const SpSubject = styled.p`
     text-align: left;
     font-size : 1rem;
     color:#000;
     margin:0;
+            ${media.phone`
+         text-align: center;
+  `};
+    
 `;
 const SpDesc = styled.p`
     text-align: left;
     font-size : 1rem;
+                ${media.phone`
+         text-align: center;
+  `};
  
 `;
 const Titles = styled.h3`
@@ -22,6 +29,9 @@ const Titles = styled.h3`
     font-family: "LatoWebMedium";
     font-weight: 900;
     font-size: 1.5em;
+                    ${media.phone`
+         text-align: center;
+  `};
 `;
 const Avatar = styled.div`
     &:hover ${SocialOverlay} {
@@ -40,6 +50,9 @@ const Avatar = styled.div`
         width: 100%;
         //filter: grayscale(100%);
     }
+        ${media.phone`
+         max-width: 100%;
+  `};
 `;
 const AvatarEffect = styled.div`
     position: absolute;
@@ -117,7 +130,7 @@ function renderFarm(items, type) {
     return items.map((item, index) => {
         return (
             <Col xs={24} sm={12} md={24} lg={12} xl={12} key={index} style={{marginBottom:20}}>
-                <Col xs={12} sm={24} md={12} lg={12} xl={12}>
+                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                     <Avatar>
                         <img src={item.image} alt={item.name} />
                         {effect}
@@ -126,7 +139,7 @@ function renderFarm(items, type) {
                         </SocialOverlay>
                     </Avatar>
                 </Col>
-                <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                     <Titles>{item.name}</Titles>
                     <SpSubject> {item.lecture}</SpSubject>
                     <SpDesc> {item.desc} </SpDesc>
