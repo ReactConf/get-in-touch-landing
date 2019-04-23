@@ -132,7 +132,7 @@ const items = [
     },
     {
         image: "/static/image/people/hamed.jpg",
-        name: "Hamed Esmaelii",
+        name: "Hamed Esmaili",
         desc : 'Manipulating the DOM‌ is an intensive operation in the browser world, react uses VDOM concept to do that with its own diffing algorithm to improve performance which we aim to go through it to understand what is under the hood.',
         lecture : 'How Diffing Algorithm Works In React',
         socials: [
