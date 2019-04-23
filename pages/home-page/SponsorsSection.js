@@ -20,6 +20,11 @@ const media = [
         url: "https://zoomtech.org/",
     },
     {
+        image: "/static/image/sponsors/afkar.png",
+        name: "afkarnews",
+        url: "https://www.afkarnews.com/",
+    },
+    {
         image: "/static/image/sponsors/gadgetnews.png",
         name: "gadgetnews.net",
         url: "https://gadgetnews.net",

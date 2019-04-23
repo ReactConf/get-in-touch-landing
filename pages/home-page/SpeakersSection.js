@@ -162,6 +162,22 @@ const items = [
             },
         ],
     },
+    {
+        image: "/static/image/people/mohammad.jpg",
+        name: "Mohamad Jahani",
+        desc : 'Hooks are the new/hot feature of React 16.8. The talk is going to cover some answers to the following questions:What?, Why?, How?',
+        lecture : 'Everything You Need To Know About Hooks',
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/mamal72/",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://github.com/mamal72",
+                icon: "fa-github",
+            },
+        ],
+    },
 
 ];
 const SpeakersSection = () => {
