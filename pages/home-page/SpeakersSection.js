@@ -84,8 +84,8 @@ const items = [
     },
     {
         image: "/static/image/people/mojtaba.jpg",
-        name: "Mojtaba Esbaripour",
-        desc : 'Frontend Engineer (Rechat, USA),An overview on how React works and what features are added to it in version 16.x',
+        name: "Mojtaba Esparipour",
+        desc : 'An overview on how React works and what features are added to it in version 16.x',
         lecture : 'React 16 Overview',
         socials: [
             {
@@ -93,7 +93,7 @@ const items = [
                 icon: "fa-linkedin",
             },
             {
-                url: "http://www.twitter.com/mojtabast",
+                url: "http://www.twitter.com/mojtabast_fa",
                 icon: "fa-twitter",
             },
         ],
