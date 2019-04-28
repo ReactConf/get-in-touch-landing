@@ -20,8 +20,8 @@ const Image = styled.img`
     max-width: 80%;
     max-height: 200px;
     width: 90%;
-    filter: grayscale(100%);
-    fill: black;
+    // filter: grayscale(100%);
+    // fill: black;
       -webkit-transition: all .5s ease-in-out;
     &:hover {
      filter: none;

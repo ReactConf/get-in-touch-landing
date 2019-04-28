@@ -1,6 +1,5 @@
 import React from "react";
 import PageSection from "components/PageSection/index";
-import styled from "styled-components";
 import Speakers from 'components/Speakers/index'
 
 

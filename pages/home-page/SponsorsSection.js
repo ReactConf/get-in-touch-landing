@@ -1,9 +1,13 @@
 import React, {Fragment} from "react";
 import PageSection from "components/PageSection/index";
 import Sponsors from "components/Sponsors/index";
-import config from "config";
 
 const media = [
+    {
+        image: "/static/image/sponsors/radismedia.png",
+        name: "radismedia",
+        url: "https://www.instagram.com/radismedia/",
+    },
     {
         image: "/static/image/sponsors/virgool.png",
         name: "virgool.io",
@@ -23,6 +27,11 @@ const media = [
         image: "/static/image/sponsors/zoomtech.png",
         name: "zoomtech.org",
         url: "https://zoomtech.org/",
+    },
+    {
+        image: "/static/image/sponsors/macneed.png",
+        name: "macneed.ir",
+        url: "http://macneed.ir",
     },
     {
         image: "/static/image/sponsors/afkar.png",
