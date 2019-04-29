@@ -38,6 +38,21 @@ const items = [
         ],
     },
     {
+        image: "/static/image/people/samir.jpg",
+        name: "Samir Rad",
+        desc: "Creative Generalist",
+        socials: [
+            {
+                url: "http://www.linkedin.com/in/radismedia",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "http://www.instagram.com/radismedia",
+                icon: "fa-instagram",
+            },
+        ],
+    },
+    {
         image: "/static/image/people/ahmad.jpg",
         name: "Ahmad Karimpour",
         desc: "React Conf Organizer",
@@ -86,20 +101,20 @@ const items = [
             },
         ],
     },
+
     {
-        image: "/static/image/people/samir.jpg",
-        name: "Samir Rad",
-        desc: "Creative Generalist",
-        socials: [
+        image: '/static/image/people/arash.jpg',
+        name: 'Arash Shams',
+        desc: "React Conf Devops",
+        socials :[
             {
-                url: "http://www.linkedin.com/in/radismedia",
-                icon: "fa-linkedin",
+                url: 'https://www.linkedin.com/in/ara4sh/',
+                icon: 'fa-linkedin'
+            },{
+                url: 'https://github.com/Ara4Sh',
+                icon: 'fa-github'
             },
-            {
-                url: "http://www.instagram.com/radismedia",
-                icon: "fa-instagram",
-            },
-        ],
+        ]
     },
     {
         image: "/static/image/people/iman.jpg",
