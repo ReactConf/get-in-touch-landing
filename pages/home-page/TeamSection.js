@@ -6,7 +6,7 @@ const items = [
     {
         image: "/static/image/people/milad.jpg",
         name: "Milad Heydari",
-        desc: "Founder of Reactconf",
+        desc: "Founder of React Conf",
         socials: [
             {
                 url: "https://linkedin.com/in/miladheydari",
@@ -23,16 +23,16 @@ const items = [
         ],
     },
     {
-        image: "/static/image/people/mohsen.jpg",
-        name: "Mohsen Barati",
-        desc: "Project Manager",
+        image: "/static/image/people/pourya.jpg",
+        name: "Pourya Sharifi",
+        desc: "React Conf Project Manager",
         socials: [
             {
-                url: "https://linkedin.com/in/mohsenbarati",
+                url: "https://www.linkedin.com/in/alaki/",
                 icon: "fa-linkedin",
             },
             {
-                url: "https://twitter.com/mohsenـbarati",
+                url: "https://twitter.com/alaki",
                 icon: "fa-twitter",
             },
         ],
@@ -40,7 +40,7 @@ const items = [
     {
         image: "/static/image/people/ahmad.jpg",
         name: "Ahmad Karimpour",
-        desc: "Reactconf Organizer",
+        desc: "React Conf Organizer",
         socials: [
             {
                 url: "https://www.linkedin.com/in/ahmadina",
@@ -52,20 +52,6 @@ const items = [
             },
         ],
     },
-    // {
-    //     image: "/static/image/people/armin.jpg",
-    //     name: "Armin Ebrahimi",
-    //     socials: [
-    //         {
-    //             url: "https://www.linkedin.com/in/arm1ne/",
-    //             icon: "fa-linkedin",
-    //         },
-    //         {
-    //             url: "https://twitter.com/Arm1nE",
-    //             icon: "fa-twitter",
-    //         },
-    //     ],
-    // },
     {
         image: "/static/image/people/arya.jpg",
         name: "Arya Sadeghi",

@@ -24,6 +24,11 @@ const media = [
         url: "https://aasaam.com/",
     },
     {
+        image: "/static/image/sponsors/Binosha.png",
+        name: "Binosha",
+        url: "https://binosha.com",
+    },
+    {
         image: "/static/image/sponsors/zoomtech.png",
         name: "zoomtech.org",
         url: "https://zoomtech.org/",

@@ -100,8 +100,8 @@ const items = [
     {
         image: "/static/image/people/milad.jpg",
         name: "Milad Heydari",
-        desc : 'Announcing Talk Details Soon',
-        lecture : 'N/A',
+        desc : 'render on the server rather than in the browser. talk about Cons of Rendering React on the Server, Architecture, Performance and challenges.',
+        lecture : 'React Server-Side Rendering',
         socials: [
             {
                 url: "http://www.linkedin.com/in/miladheydari",
