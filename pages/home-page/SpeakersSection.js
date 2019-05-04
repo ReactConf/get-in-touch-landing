@@ -205,6 +205,22 @@ const items = [
             },
         ],
     },
+    {
+        image: "/static/image/people/ahmad.jpg",
+        name: "Ahmad Karimpour",
+        desc : 'Understanding the communication between JS & Native, Error Tracking, Codepush, VirtualizedList...',
+        lecture : 'A Cup of React-Native',
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/ahmadina/",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/iahmadina",
+                icon: "fa-twitter",
+            },
+        ],
+    },
 ];
 const SpeakersSection = () => {
     return (

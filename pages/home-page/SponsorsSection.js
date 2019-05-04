@@ -4,6 +4,16 @@ import Sponsors from "components/Sponsors/index";
 
 const media = [
     {
+        image: "/static/image/sponsors/arjang.png",
+        name: "arjang",
+        url: "https://arjang.ac.ir/",
+    },
+    {
+        image: "/static/image/sponsors/ciw.png",
+        name: "ciwiran",
+        url: "https://ciwiran.com/",
+    },
+    {
         image: "/static/image/sponsors/radismedia.png",
         name: "radismedia",
         url: "https://www.instagram.com/radismedia/",
