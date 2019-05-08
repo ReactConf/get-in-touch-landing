@@ -100,8 +100,8 @@ const items = [
     {
         image: "/static/image/people/milad.jpg",
         name: "Milad Heydari",
-        desc : 'render on the server rather than in the browser. talk about Cons of Rendering React on the Server, Architecture, Performance and challenges.',
-        lecture : 'React Server-Side Rendering',
+        desc : 'Developers looking for good companies and companies looking for good developers. We have issues regarding this matter, milad wants to go deep and talk about encounter between knowledge and companies.',
+        lecture : 'hiring issues in Front-End Community',
         socials: [
             {
                 url: "http://www.linkedin.com/in/miladheydari",
@@ -218,6 +218,26 @@ const items = [
             {
                 url: "https://twitter.com/iahmadina",
                 icon: "fa-twitter",
+            },
+        ],
+    },
+    {
+        image: "/static/image/people/hasan.jpg",
+        name: "Mohammad Hassan Gilak",
+        desc : 'render on the server rather than in the browser. talk about Cons of Rendering React on the Server, Architecture, Performance and challenges.',
+        lecture : 'React Server-Side Rendering',
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/mohammad-hassan-gilak-9248268a/",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/hasangilak",
+                icon: "fa-twitter",
+            },
+            {
+                url: "https://github.com/hasangilak",
+                icon: "fa-github",
             },
         ],
     },
