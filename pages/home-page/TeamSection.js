@@ -22,21 +22,21 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/pourya.jpg",
-        name: "Pourya Sharifi",
-        desc: "React Conf Project Manager",
-        socials: [
-            {
-                url: "https://www.linkedin.com/in/alaki/",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/alaki",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/pourya.jpg",
+    //     name: "Pourya Sharifi",
+    //     desc: "React Conf Project Manager",
+    //     socials: [
+    //         {
+    //             url: "https://www.linkedin.com/in/alaki/",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/alaki",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
     {
         image: "/static/image/people/samir.jpg",
         name: "Samir Rad",

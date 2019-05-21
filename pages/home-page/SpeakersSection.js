@@ -119,7 +119,7 @@ const items = [
     },
     {
         image: "/static/image/people/ehsun.jpg",
-        name: "Ehsun Mohammadi",
+        name: "Ehsan Mohammadi",
         desc : 'Advanced Efficiency, Reusability of React Components,Performance,Modularity and the market job, ... and everything is Javascript.',
         lecture : 'Why are we using React.js in our project?',
         socials: [
@@ -237,6 +237,26 @@ const items = [
             },
             {
                 url: "https://github.com/hasangilak",
+                icon: "fa-github",
+            },
+        ],
+    },
+    {
+        image: "/static/image/people/ehsun-h.jpg",
+        name: "Ehsan Hosseini",
+        desc : 'What do you do if you need an enterprise Front-end application? How to develop each part of the application completely in an independent team with their structure, libraries, and framework as a separate application? And how these applications will communicate with each other? These questions will be answered by Micro-Frontend concept.',
+        lecture : 'Micro-Frontend',
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/mohammad-hassan-gilak-9248268a/",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/hasangilak",
+                icon: "fa-twitter",
+            },
+            {
+                url: "https://github.com/zerob4wl",
                 icon: "fa-github",
             },
         ],
