@@ -248,12 +248,8 @@ const items = [
         lecture : 'Micro-Frontend',
         socials: [
             {
-                url: "https://www.linkedin.com/in/mohammad-hassan-gilak-9248268a/",
+                url: "http://-www.linkedin.com/in/ehsan-hosseini-a92a676b",
                 icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/hasangilak",
-                icon: "fa-twitter",
             },
             {
                 url: "https://github.com/zerob4wl",
