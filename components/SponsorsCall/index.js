@@ -3,16 +3,16 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Row from "antd/lib/row";
 import Col from "antd/lib/col";
-import Button from 'antd/lib/button';
-import animType from 'rc-texty/lib/animTypes';
-import IntlMessages from '../utility/intlMessages';
-import media from '../layouts/Master/MediaQuery';
-import PaperCard from '../PaperCard';
-import config from '../../config';
-import PageSection from '../PageSection';
+import Button from "antd/lib/button";
+import animType from "rc-texty/lib/animTypes";
+import IntlMessages from "../utility/intlMessages";
+import media from "../layouts/Master/MediaQuery";
+import PaperCard from "../PaperCard";
+import config from "../../config";
+import PageSection from "../PageSection";
 
 const Img = styled.img`
-max-width: 320px;
+    max-width: 320px;
 `;
 const ModalButton = styled.div`
     .ant-btn {
@@ -68,7 +68,7 @@ const ModalButton = styled.div`
     }
 `;
 
-const SponsorsCall = ({items}) => {
+const SponsorsCall = ({ items }) => {
     return (
         <Row type="flex" justify="center" align="middle">
             <Col xs={24} sm={24} md={16} lg={8} xl={8}>
@@ -80,7 +80,7 @@ const SponsorsCall = ({items}) => {
                 />
             </Col>
         </Row>
-    )
+    );
 };
 SponsorsCall.propTypes = {
     items: PropTypes.array.isRequired,

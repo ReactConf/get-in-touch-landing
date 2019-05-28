@@ -103,18 +103,19 @@ const items = [
     },
 
     {
-        image: '/static/image/people/arash.jpg',
-        name: 'Arash Shams',
+        image: "/static/image/people/arash.jpg",
+        name: "Arash Shams",
         desc: "React Conf Devops",
-        socials :[
+        socials: [
             {
-                url: 'https://www.linkedin.com/in/ara4sh/',
-                icon: 'fa-linkedin'
-            },{
-                url: 'https://github.com/Ara4Sh',
-                icon: 'fa-github'
+                url: "https://www.linkedin.com/in/ara4sh/",
+                icon: "fa-linkedin",
             },
-        ]
+            {
+                url: "https://github.com/Ara4Sh",
+                icon: "fa-github",
+            },
+        ],
     },
     {
         image: "/static/image/people/iman.jpg",

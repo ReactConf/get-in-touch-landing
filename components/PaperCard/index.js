@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import IntlMessages from "components/utility/intlMessages";
 import styled from "styled-components";
-import {Icon} from 'antd';
+import { Icon } from "antd";
 import media from "components/layouts/Master/MediaQuery";
 
 const CardTitle = styled.h4`
@@ -70,7 +70,7 @@ const PaperCard = ({ title, body, btn, btnlink, withSample }) => {
             <CardFace>
                 <CardTitle>
                     <Icon type="bulb" />
-                    <br/>
+                    <br />
                     <IntlMessages id={title} />
                 </CardTitle>
                 <CardParagraph>
@@ -83,7 +83,7 @@ const PaperCard = ({ title, body, btn, btnlink, withSample }) => {
                 >
                     <IntlMessages id={btn} />
                 </a>
-                {withSample ?
+                {withSample ? (
                     <Fragment>
                         <br />
                         <br />
@@ -94,11 +94,14 @@ const PaperCard = ({ title, body, btn, btnlink, withSample }) => {
                         >
                             <i className="fas fa-download" />{" "}
                             <span>
-                        {" "}
+                                {" "}
                                 <IntlMessages id="btnDlTemplate" />
-                    </span>
+                            </span>
                         </a>
-                    </Fragment> : <Fragment/>}
+                    </Fragment>
+                ) : (
+                    <Fragment />
+                )}
             </CardFace>
         </Fragment>
     );

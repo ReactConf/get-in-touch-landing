@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import PageSection from "components/PageSection/index";
 import Sponsors from "components/Sponsors/index";
 
@@ -73,12 +73,11 @@ const SponsorsSection = () => {
     return (
         <Fragment>
             <PageSection title="Media Partners" size={2} bg={"#fff"}>
-                <br/>
-                <Sponsors items={media}/>
+                <br />
+                <Sponsors items={media} />
             </PageSection>
-            <br/>
-            <br/>
-
+            <br />
+            <br />
         </Fragment>
     );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import TeamMembers from "components/TeamMembers/index";
-import PageSection from '../../components/PageSection';
+import PageSection from "../../components/PageSection";
 
 const items = [
     {
@@ -76,15 +76,9 @@ const items = [
 ];
 const JurySection = () => {
     return (
-        <PageSection
-            title="jury.heading"
-            size={8}
-            bg={"#edece8"}
-            id="jury"
-        >
+        <PageSection title="jury.heading" size={8} bg={"#edece8"} id="jury">
             <TeamMembers items={items} type={"jury"} />
         </PageSection>
-
     );
 };
 

@@ -11,7 +11,7 @@ const Page = styled.div`
     background: ${({ background }) => background};
     width: 100%;
     padding: ${({ padding }) => padding + "rem 0"};
-               ${media.phone`
+    ${media.phone`
          padding: 1rem 0;
   `};
 `;

@@ -20,7 +20,7 @@ const Avatar = styled.div`
         width: 100%;
         //filter: grayscale(100%);
     }
-     ${media.smallPhone`
+    ${media.smallPhone`
   max-width: 100%;
   `};
 `;

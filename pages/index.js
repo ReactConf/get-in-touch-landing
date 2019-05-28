@@ -1,15 +1,15 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import MasterLayout from "components/layouts/Master";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import HomeSection from "./home-page/HomeSection";
 import SponsorsSection from "./home-page/SponsorsSection";
 import BecomeSpeakerSection from "./home-page/BecomeSpeakerSection";
 import TeamSection from "./home-page/TeamSection";
 import HeaderItems from "components/HeaderItems";
 import HomeBackground from "./home-page/HomeBackground";
-import SpeakersSection from './home-page/SpeakersSection';
-import JurySection from './home-page/JurySection';
-import CallOutSponsors from './home-page/CallOutSponsors'
+import SpeakersSection from "./home-page/SpeakersSection";
+import JurySection from "./home-page/JurySection";
+import CallOutSponsors from "./home-page/CallOutSponsors";
 
 const HomePage = () => {
     return (
@@ -22,16 +22,16 @@ const HomePage = () => {
                 />
             </Helmet>
             <MasterLayout>
-                <HeaderItems/>
-                <HomeSection/>
-                <HomeBackground/>
-                <SpeakersSection/>
-                <JurySection/>
+                <HeaderItems />
+                <HomeSection />
+                <HomeBackground />
+                <SpeakersSection />
+                <JurySection />
                 {/*<BecomeSpeakerSection />*/}
-                <CallOutSponsors/>
-                <SponsorsSection/>
+                <CallOutSponsors />
+                <SponsorsSection />
 
-                <TeamSection/>
+                <TeamSection />
             </MasterLayout>
         </Fragment>
     );
