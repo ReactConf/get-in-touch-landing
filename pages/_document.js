@@ -2,7 +2,7 @@ import Document, { Head, Main, NextScript } from "next/document";
 import flush from "styled-jsx/server";
 import { ServerStyleSheet } from "styled-components";
 import Helmet from "react-helmet";
-import config from "config";
+import configs from "configs";
 
 export default class ReactConf extends Document {
     static async getInitialProps(...args) {
@@ -57,7 +57,7 @@ export default class ReactConf extends Document {
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer',"${config.analyticsKey}");`,
+      })(window,document,'script','dataLayer',"${configs.analyticsKey}");`,
                         }}
                     />
                     <noscript
@@ -65,7 +65,7 @@ export default class ReactConf extends Document {
                             __html: `
                         <iframe
                             src="https://www.googletagmanager.com/ns.html?id=${
-                                config.analyticsKey
+                                configs.analyticsKey
                             }"
                             height="0"
                             width="0"
@@ -95,7 +95,7 @@ export default class ReactConf extends Document {
                     </title>
                     <meta
                         name="google-site-verification"
-                        content={`${config.googleWebmaster}`}
+                        content={`${configs.googleWebmaster}`}
                     />
                     <meta name="robots" content="index, follow" />
                     <meta

@@ -8,7 +8,7 @@ import animType from "rc-texty/lib/animTypes";
 import IntlMessages from "../utility/intlMessages";
 import media from "../layouts/Master/MediaQuery";
 import PaperCard from "../PaperCard";
-import config from "../../config";
+import configs from "../../configs";
 import PageSection from "../PageSection";
 
 const Img = styled.img`
@@ -76,7 +76,7 @@ const SponsorsCall = ({ items }) => {
                     title="sponsor.title"
                     body="sponsor.body"
                     btn="sponsor.btn"
-                    btnlink={`mailto:${config.email}`}
+                    btnlink={`mailto:${configs.email}`}
                 />
             </Col>
         </Row>

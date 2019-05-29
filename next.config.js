@@ -16,7 +16,7 @@ module.exports = {
             languageProvider: path.resolve(__dirname, "./languageProvider"),
             image: path.resolve(__dirname, "./static/image"),
             pages: path.resolve(__dirname, "./pages"),
-            config: path.resolve(__dirname, "./config"),
+            configs: path.resolve(__dirname, "./configs"),
         };
         config.module.rules.push(
             {

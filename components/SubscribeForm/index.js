@@ -12,7 +12,7 @@ import media from "components/layouts/Master/MediaQuery";
 import Texty from "rc-texty";
 import "rc-texty/assets/index.css";
 import animType from "rc-texty/lib/animTypes";
-import config from "config";
+import configs from "configs";
 import axios from "axios";
 import forEach from "lodash/forEach";
 
@@ -362,7 +362,7 @@ class SubscribeForm extends Component {
                     Object.assign(values, {
                         experience: values.experience.toString(),
                     });
-                    const response = await axios.post(config.apiUrl, values);
+                    const response = await axios.post(configs.apiUrl, values);
                     await this.setState({
                         loading: false,
                         modalVisible: false,

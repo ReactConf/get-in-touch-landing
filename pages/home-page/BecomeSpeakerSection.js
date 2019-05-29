@@ -3,7 +3,7 @@ import Row from "antd/lib/row";
 import Col from "antd/lib/col";
 import PageSection from "components/PageSection/index";
 import PaperCard from "components/PaperCard/index";
-import config from "config";
+import configs from "configs";
 import styled from "styled-components";
 import IntlMessages from "components/utility/intlMessages";
 import JurySection from "./JurySection";
@@ -40,7 +40,7 @@ const BecomeSpeakerSection = () => {
                         body="speaker.body"
                         btn="speaker.btn"
                         withSample={true}
-                        btnlink={`mailto:${config.email}`}
+                        btnlink={`mailto:${configs.email}`}
                     />
                 </Col>
             </Row>

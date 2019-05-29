@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import PageSection from "components/PageSection/index";
 import SponsorsCall from "components/SponsorsCall/index";
-import config from "config";
 
 const items = {
     image: "/static/image/sponsers.png",

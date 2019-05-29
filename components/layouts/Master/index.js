@@ -4,7 +4,7 @@ import AppLocale from "languageProvider";
 import "./injectGlobal";
 import antStyle from "./style.less";
 import FooterLayout from "../Footer";
-import { language } from "config";
+import { language } from "configs";
 
 class MasterLayout extends Component {
     render() {

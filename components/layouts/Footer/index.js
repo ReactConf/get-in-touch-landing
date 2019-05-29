@@ -5,7 +5,7 @@ import Row from "antd/lib/row";
 import Col from "antd/lib/col";
 import styled from "styled-components";
 import SocialIcons from "components/SocialIcons";
-import config from "config";
+import configs from "configs";
 
 const Copyright = styled.p`
     text-align: center;
@@ -15,27 +15,27 @@ const Copyright = styled.p`
 
 const items = [
     {
-        url: config.social.github,
+        url: configs.social.github,
         icon: "fa-github",
     },
     {
-        url: config.social.twitter,
+        url: configs.social.twitter,
         icon: "fa-twitter",
     },
     {
-        url: config.social.instagram,
+        url: configs.social.instagram,
         icon: "fa-instagram",
     },
     {
-        url: config.social.telegram,
+        url: configs.social.telegram,
         icon: "fa-telegram-plane",
     },
     {
-        url: config.social.tel,
+        url: configs.social.tel,
         icon: "fa-whatsapp",
     },
     {
-        url: config.social.blog,
+        url: configs.social.blog,
         icon: "fa-blogger-b",
     },
 ];
@@ -48,7 +48,7 @@ const FooterLayout = () => {
                         <IntlMessages id="contact.follow" />
                     </h3>
                     <SocialIcons items={items} size={2} />
-                    <a href={`mailto:${config.email}`} target="_blank">
+                    <a href={`mailto:${configs.email}`} target="_blank">
                         <h3>
                             <IntlMessages id="contact.email" />
                         </h3>
