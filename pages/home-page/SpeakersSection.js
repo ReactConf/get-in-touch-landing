@@ -263,7 +263,7 @@ const items = [
         lecture: "Micro-Frontend",
         socials: [
             {
-                url: "http://-www.linkedin.com/in/ehsan-hosseini-a92a676b",
+                url: "http://www.linkedin.com/in/ehsan-hosseini-a92a676b",
                 icon: "fa-linkedin",
             },
             {

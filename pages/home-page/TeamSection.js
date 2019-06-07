@@ -22,21 +22,21 @@ const items = [
             },
         ],
     },
-    // {
-    //     image: "/static/image/people/pourya.jpg",
-    //     name: "Pourya Sharifi",
-    //     desc: "React Conf Project Manager",
-    //     socials: [
-    //         {
-    //             url: "https://www.linkedin.com/in/alaki/",
-    //             icon: "fa-linkedin",
-    //         },
-    //         {
-    //             url: "https://twitter.com/alaki",
-    //             icon: "fa-twitter",
-    //         },
-    //     ],
-    // },
+    {
+        image: "/static/image/people/pourya.jpg",
+        name: "Pourya Sharifi",
+        desc: "React Conf Project Manager",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/alaki/",
+                icon: "fa-linkedin",
+            },
+            {
+                url: "https://twitter.com/alaki",
+                icon: "fa-twitter",
+            },
+        ],
+    },
     {
         image: "/static/image/people/samir.jpg",
         name: "Samir Rad",
@@ -67,40 +67,21 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/arya.jpg",
-        name: "Arya Sadeghi",
-        desc: "Community Lounge",
-        socials: [
-            {
-                url: "https://www.linkedin.com/in/aryasadeghy/",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/aryasadeghy",
-                icon: "fa-twitter",
-            },
-            {
-                url: "https://twitter.com/aryasadeghy",
-                icon: "fa-github",
-            },
-        ],
-    },
-    {
-        image: "/static/image/people/idin.jpg",
-        name: "Idin Khayami",
-        desc: "Community Lounge",
-        socials: [
-            {
-                url: "https://ir.linkedin.com/in/idin-khayami-93163aa3",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/iiciigiirl",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/idin.jpg",
+    //     name: "Idin Khayami",
+    //     desc: "Community Lounge",
+    //     socials: [
+    //         {
+    //             url: "https://ir.linkedin.com/in/idin-khayami-93163aa3",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/iiciigiirl",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
 
     {
         image: "/static/image/people/arash.jpg",
@@ -117,21 +98,21 @@ const items = [
             },
         ],
     },
-    {
-        image: "/static/image/people/iman.jpg",
-        name: "Iman Aletaha",
-        desc: "Community Lounge",
-        socials: [
-            {
-                url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/idrstreet",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/iman.jpg",
+    //     name: "Iman Aletaha",
+    //     desc: "Community Lounge",
+    //     socials: [
+    //         {
+    //             url: "https://www.linkedin.com/in/iman-aletaha-b296234b",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/idrstreet",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
 ];
 const TeamSection = () => {
     return (
