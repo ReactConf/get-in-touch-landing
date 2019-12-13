@@ -20,7 +20,7 @@
         "lru-cache": "^4.1.1",
         "next": "^5.0.0",
         "next-routes": "^1.4.1",
-        "npm": "^6.4.1",
+        "npm": "^6.13.4",
         "postcss-easy-import": "2.0.0",
         "postcss-flexbugs-fixes": "^4.1.0",
         "postcss-loader": "^3.0.0",
