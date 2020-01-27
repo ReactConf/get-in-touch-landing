@@ -14,6 +14,11 @@ const HomeBackgroundBox = styled.div`
     img.hero-background {
         float: right;
     }
+    img.strips {
+        ${media.tablet`
+            display:none;
+        `};
+    }
 `;
 const Bars = styled.div`
     position: absolute;
@@ -101,15 +106,15 @@ const HomeBackground = () => {
                     className="gutter-row"
                     xs={{ span: 0 }}
                     sm={{ span: 0 }}
-                    md={{ span: 18 }}
-                    lg={{ span: 16 }}
-                    xl={{ span: 14 }}
+                    md={{ span: 17 }}
+                    lg={{ span: 15 }}
+                    xl={{ span: 13 }}
                     
                 >
                     <img className="hero-background" src="/static/image/splash.svg" />
                 </Col>
             </Row>
-            <Bars><img src="/static/image/bars.svg" /></Bars>
+            <Bars><img className="strips" src="/static/image/bars.svg" /></Bars>
             {/* <Row gutter={0} type="flex" justify="end" align="top">
                 <Col
                     className="gutter-row"
