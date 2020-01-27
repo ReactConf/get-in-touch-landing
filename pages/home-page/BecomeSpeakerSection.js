@@ -44,14 +44,14 @@ const BecomeSpeakerSection = () => {
                     />
                 </Col>
             </Row>
-            <Row type="flex" justify="center">
+            {/* <Row type="flex" justify="center">
                 <Col span={24}>
                     <PageHeading2>
                         <IntlMessages id="jury.heading" />
                     </PageHeading2>
                 </Col>
             </Row>
-            <JurySection />
+            <JurySection /> */}
         </PageSection>
     );
 };

@@ -1,62 +1,58 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, {Fragment} from "react";
+import Link from "next/link";
 import styled from "styled-components";
-import Row from "antd/lib/row";
-import Col from "antd/lib/col";
-import SocialIcons from "../SocialIcons";
+import { Row } from "antd";
 
-const Link = styled.a`
-    display: block;
-    transition: opacity 0.26s ease-in-out;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-const Image = styled.img`
-    display: block;
-    margin: 0 auto;
-    max-width: 80%;
-    max-height: 200px;
-    width: 90%;
-    // filter: grayscale(100%);
-    // fill: black;
-    -webkit-transition: all 0.5s ease-in-out;
-    &:hover {
-        filter: none;
-        -webkit-filter: grayscale(0%);
+const SponsorsBox = styled.div`
+  text-align: center;
+  width: 100%;
+  margin: 1rem 0;
+  a{
+    display:inline-block;
+    margin: 10px 16px;
+    vertical-align: middle;
+    -moz-transition:linear 300ms 0s;
+    -o-transition:linear 300ms 0s;
+    -webkit-transition:linear 300ms;
+    -webkit-transition-delay:0s;
+    transition:linear 300ms 0s;
+    img{
+      filter: grayscale(100%);
+      max-width: 120px;
+      opacity : 0.5;
+      -moz-transition:linear 300ms 0s;
+      -o-transition:linear 300ms 0s;
+      -webkit-transition:linear 300ms;
+      -webkit-transition-delay:0s;
+      transition:linear 300ms 0s;
     }
+    &:hover{
+      img{
+        opacity : 1;
+        filter: grayscale(0%);
+      }
+    }
+  }
 `;
 
 function renderFarm(items) {
     return items.map((item, index) => {
         return (
-            <Col
-                xs={12}
-                sm={12}
-                md={6}
-                lg={5}
-                xl={4}
-                key={index}
-                style={{ marginBottom: 20 }}
-            >
-                <Link target="_blank" href={item.url} key={index}>
-                    <Image src={item.image} alt={item.name} />
-                </Link>
-            </Col>
-        );
+          <Link href={item.url}  key={index}>
+            <a target="_blank">
+             <img src={item.image} alt={item.name} />
+            </a>
+          </Link>
+        )
     });
 }
 
-const Sponsors = ({ items }) => {
+const Sponsors = ({items}) => {
     return (
-        <Row type="flex" justify="center">
-            {renderFarm(items)}
-        </Row>
-    );
-};
-Sponsors.propTypes = {
-    items: PropTypes.array.isRequired,
-};
+      <SponsorsBox>
+              {renderFarm(items)}
+      </SponsorsBox>
+    )
+
+}
 export default Sponsors;

@@ -57,7 +57,7 @@ View all [issues](https://github.com/ReactConf/get-in-touch-landing/issues), ope
 
 ## Contact/Support
 
-<info@reactconf.ir>
+<reactconf.ir@gmail.com>
 
 Follow us on Twitter [@reactconf_ir](http://twitter.com/reactconf_ir)
 

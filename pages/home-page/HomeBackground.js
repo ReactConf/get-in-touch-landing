@@ -11,15 +11,16 @@ const HomeBackgroundBox = styled.div`
     ${media.desktop`
       padding-bottom: 5.5em;
     `};
+    img.hero-background {
+        float: right;
+    }
 `;
 const Bars = styled.div`
-    position: relative;
-    left: 0;
-    width: 400px;
-    height: 400px;
+    position: absolute;
+    left: 0;  
     max-width: 400px;
-    top: 0;
-    transform: rotate(-8deg);
+    bottom: 0;
+    transform: rotate(0deg);
     ${media.desktop`
     max-width:200px;
      ${media.desktop`
@@ -103,11 +104,13 @@ const HomeBackground = () => {
                     md={{ span: 18 }}
                     lg={{ span: 16 }}
                     xl={{ span: 14 }}
+                    
                 >
-                    <img src="/static/image/splash.svg" />
+                    <img className="hero-background" src="/static/image/splash.svg" />
                 </Col>
             </Row>
-            <Row gutter={0} type="flex" justify="end" align="top">
+            <Bars><img src="/static/image/bars.svg" /></Bars>
+            {/* <Row gutter={0} type="flex" justify="end" align="top">
                 <Col
                     className="gutter-row"
                     xs={{ span: 24 }}
@@ -142,7 +145,7 @@ const HomeBackground = () => {
                         </div>
                     </Presenter>
                 </Col>
-            </Row>
+            </Row> */}
         </HomeBackgroundBox>
     );
 };

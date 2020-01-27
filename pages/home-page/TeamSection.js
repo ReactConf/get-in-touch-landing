@@ -38,35 +38,46 @@ const items = [
         ],
     },
     {
-        image: "/static/image/people/samir.jpg",
-        name: "Samir Rad",
-        desc: "Creative Generalist",
+        image: "/static/image/people/ali.jpg",
+        name: "Ali Hariri",
+        desc: "Business Developer",
         socials: [
             {
-                url: "http://www.linkedin.com/in/radismedia",
+                url: "https://www.linkedin.com/in/malihariri/",
                 icon: "fa-linkedin",
-            },
-            {
-                url: "http://www.instagram.com/radismedia",
-                icon: "fa-instagram",
             },
         ],
     },
-    {
-        image: "/static/image/people/ahmad.jpg",
-        name: "Ahmad Karimpour",
-        desc: "React Conf Organizer",
-        socials: [
-            {
-                url: "https://www.linkedin.com/in/ahmadina",
-                icon: "fa-linkedin",
-            },
-            {
-                url: "https://twitter.com/iahmadina",
-                icon: "fa-twitter",
-            },
-        ],
-    },
+    // {
+    //     image: "/static/image/people/samir.jpg",
+    //     name: "Samir Rad",
+    //     desc: "Creative Generalist",
+    //     socials: [
+    //         {
+    //             url: "http://www.linkedin.com/in/radismedia",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "http://www.instagram.com/radismedia",
+    //             icon: "fa-instagram",
+    //         },
+    //     ],
+    // },
+    // {
+    //     image: "/static/image/people/ahmad.jpg",
+    //     name: "Ahmad Karimpour",
+    //     desc: "React Conf Organizer",
+    //     socials: [
+    //         {
+    //             url: "https://www.linkedin.com/in/ahmadina",
+    //             icon: "fa-linkedin",
+    //         },
+    //         {
+    //             url: "https://twitter.com/iahmadina",
+    //             icon: "fa-twitter",
+    //         },
+    //     ],
+    // },
     // {
     //     image: "/static/image/people/idin.jpg",
     //     name: "Idin Khayami",

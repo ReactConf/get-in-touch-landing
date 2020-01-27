@@ -549,7 +549,7 @@ class SubscribeForm extends Component {
                             {getFieldDecorator("phone_number", {
                                 rules: [
                                     {
-                                        required: false,
+                                        required: true,
                                         message: this.context.intl.formatMessage(
                                             {
                                                 id:
@@ -558,7 +558,7 @@ class SubscribeForm extends Component {
                                         ),
                                     },
                                 ],
-                            })(<Input style={{ width: "100%" }} />)}
+                            })(<Input placeholder="09xxxxxxxxx" style={{ width: "100%" }} />)}
                         </FormItem>
                         <FormItem {...tailFormItemLayout}>
                             <Button

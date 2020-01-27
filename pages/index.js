@@ -11,11 +11,14 @@ import SpeakersSection from "./home-page/SpeakersSection";
 import JurySection from "./home-page/JurySection";
 import CallOutSponsors from "./home-page/CallOutSponsors";
 
+import SponsorsCall from 'components/SponsorsCall/index';
+import PageSection from "components/PageSection/index";
+
 const HomePage = () => {
     return (
         <Fragment>
             <Helmet>
-                <title>React Conf Iran 2019</title>
+                <title>React Conf Iran 2020</title>
                 <meta
                     name="description"
                     content="First Javascript & ReactJS Conference in IRAN, Algorithm, Data Structure,ReactJS,NodeJS,Graphql and etc…"
@@ -25,13 +28,18 @@ const HomePage = () => {
                 <HeaderItems />
                 <HomeSection />
                 <HomeBackground />
-                <SpeakersSection />
-                <JurySection />
-                {/*<BecomeSpeakerSection />*/}
-                <CallOutSponsors />
                 <SponsorsSection />
-
+                {/* <SpeakersSection />
+                <JurySection /> */}
+                <BecomeSpeakerSection />
+                <CallOutSponsors />
+            
                 <TeamSection />
+                <div className="graybg">
+                <div className="container ">
+                    <SponsorsCall />
+                </div>  
+                </div>
             </MasterLayout>
         </Fragment>
     );

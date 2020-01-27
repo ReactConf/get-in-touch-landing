@@ -55,10 +55,19 @@ img {
     position: relative;
     padding: 0 24px;
 }
+.margin-wrapper {
+  margin: 0 100px;
+  ${media.tablet`
+  margin: 0;
+`};
+}
+.graybg {
+  background: #e3e2dd;
+}
 .full-container {
-    width: 90%;
+    width: 100%;
     margin:0 auto;
-    max-width: 1400px;
+    max-width: 100%;
     ${media.tablet`
         width: 100%;
     `};

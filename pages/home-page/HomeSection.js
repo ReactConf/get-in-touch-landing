@@ -14,6 +14,10 @@ const HomeContentBox = styled.div`
       background : #363fa2  url("/static/image/mobilebg.svg") no-repeat center bottom;      
       padding: 2em 5% 9.75em 5%;
     `};
+    .main-logo {
+        width: 110px;
+        height: auto;
+    }
 `;
 
 const CityText = styled.span`
@@ -49,6 +53,7 @@ class HomeSection extends Component {
         return (
             <div className="absolute-container">
                 <div className="full-container">
+                    <div className="margin-wrapper">
                     <Row gutter={0} type="flex" justify="start" align="top">
                         <Col
                             className="gutter-row"
@@ -61,9 +66,9 @@ class HomeSection extends Component {
                             <HomeContentBox>
                                 <Link href="/">
                                     <a>
-                                        <img
+                                        <img className="main-logo"
                                             src="/static/image/logo.svg"
-                                            alt="react conf iran 2019 | ری اکت کانف"
+                                            alt="react conf iran 2020 | ری اکت کانف"
                                         />
                                     </a>
                                 </Link>
@@ -72,10 +77,10 @@ class HomeSection extends Component {
                                     <IntlMessages id="logo.tehran" />
                                 </CityText>
                                 <Describe>
-                                    <IntlMessages id="home.describe" />
+                                   We’re looking for <br/> enthusiastic speakers!
                                 </Describe>
                                 <BodyContent>
-                                    <IntlMessages id="ReactConf Iran is a Iranian web, mobile development & everything about javascript development event. " />
+                                    <IntlMessages id="The biggest Javascript & ReactJs conference in iRAN. For all those who're in love with coding and passionate about Js and React." />
                                 </BodyContent>
                             </HomeContentBox>
                         </Col>
@@ -98,6 +103,7 @@ class HomeSection extends Component {
                             <SubscribeForm describe="form.describe" />
                         </Col>
                     </Row>
+                </div>
                 </div>
             </div>
         );
