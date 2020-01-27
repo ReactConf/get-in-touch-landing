@@ -40,7 +40,7 @@ const BecomeSpeakerSection = () => {
                         body="speaker.body"
                         btn="speaker.btn"
                         withSample={true}
-                        btnlink={`mailto:${configs.email}`}
+                        btnlink={`https://docs.google.com/forms/d/e/1FAIpQLSd_OSvbJL0GAjIeA0yRe8TLUmiWIiDrdJLCWXXgnLMSr52msw/viewform`}
                     />
                 </Col>
             </Row>
