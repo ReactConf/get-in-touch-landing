@@ -6,7 +6,7 @@ const items = {
     image: "/static/image/sponsers.png",
     title: "Call for Sponsors",
     desc:
-        "We are currently offering sponsorship packages for ReactConf 2019. Contact us to learn more about our available packages.Become a React Conf 2019 sponsor!",
+        "We are currently offering sponsorship packages for ReactConf 2020. Contact us to learn more about our available packages.Become a React Conf 2020 sponsor!",
 };
 
 const CallOutSponsors = () => {

@@ -38,6 +38,17 @@ const items = [
         ],
     },
     {
+        image: "/static/image/people/behrouz.jpg",
+        name: "Behrouz Omran",
+        desc: "BUSINESS ANALYSIS",
+        socials: [
+            {
+                url: "https://www.linkedin.com/in/behrouz-omran-3aaa2086/",
+                icon: "fa-linkedin",
+            },
+        ],
+    },
+    {
         image: "/static/image/people/ali.jpg",
         name: "Ali Hariri",
         desc: "Business Developer",

@@ -32,7 +32,7 @@ const HomePage = () => {
                 {/* <SpeakersSection />
                 <JurySection /> */}
                 <BecomeSpeakerSection />
-                <CallOutSponsors />
+                {/*<CallOutSponsors />*/}
             
                 <TeamSection />
                 <div className="graybg">

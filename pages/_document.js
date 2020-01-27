@@ -91,7 +91,7 @@ export default class ReactConf extends Document {
                     />
                     <meta charset="utf-8" />
                     <title>
-                        ReactConf 2019 | Javascript & ReactJS Conference
+                        ReactConf 2020 | Javascript & ReactJS Conference
                     </title>
                     <meta
                         name="google-site-verification"

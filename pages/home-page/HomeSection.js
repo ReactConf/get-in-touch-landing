@@ -80,7 +80,7 @@ class HomeSection extends Component {
                                    We’re looking for <br/> enthusiastic speakers!
                                 </Describe>
                                 <BodyContent>
-                                    <IntlMessages id="The biggest Javascript & ReactJs conference in iRAN. For all those who're in love with coding and passionate about Js and React." />
+                                    <IntlMessages id="The biggest Javascript & ReactJS conference in Iran. For all those who're in love with coding and passionate about Js and React." />
                                 </BodyContent>
                             </HomeContentBox>
                         </Col>

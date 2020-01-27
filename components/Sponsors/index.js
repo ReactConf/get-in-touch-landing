@@ -18,7 +18,7 @@ const SponsorsBox = styled.div`
     transition:linear 300ms 0s;
     img{
       filter: grayscale(100%);
-      max-width: 120px;
+      max-width: 150px;
       opacity : 0.5;
       -moz-transition:linear 300ms 0s;
       -o-transition:linear 300ms 0s;
