@@ -11,7 +11,7 @@ export default {
         instagram: "https://www.instagram.com/reactconf/",
         telegram: "https://t.me/reactconf/",
         github: "https://github.com/reactconf",
-        tel: "tel:989129476829",
+        tel: "tel:+982126201063",
         blog: "https://blog.reactconf.ir/",
     },
 };
