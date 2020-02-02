@@ -62,7 +62,7 @@ const items = [
     {
         image: "/static/image/people/samaneh.jpg",
         name: "samaneh rabiee",
-        desc: "Business Developer",
+        desc: "Graphic Designer",
         socials: [
             {
                 url: "https://dribbble.com/samane",
