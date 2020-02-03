@@ -40,7 +40,7 @@ const items = [
     {
         image: "/static/image/people/behrouz.jpg",
         name: "Behrouz Omran",
-        desc: "BUSINESS ANALYSIS",
+        desc: "Bussiness Analysis",
         socials: [
             {
                 url: "https://www.linkedin.com/in/behrouz-omran-3aaa2086/",
